@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>MediaSpectrum form to XML</title>
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <link rel="stylesheet" type="text/css" href="http://nwnshspcs01v/creativeportal/assets/client/css/default.css"  media="screen" />    
+  <link rel="stylesheet" type="text/css" href="http://nwnshspcs01v/creativeportal/assets/client/css/nav.css"  media="screen" />
+  <link rel="stylesheet" type="text/css" href="http://nwnshspcs01v/creativeportal/assets/client/css/print.css" media="print" />   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="http://nwnshspcs01v/creativeportal/assets/client/scripts/jquery/src/core.js"></script>
+  
+  
+</head>
+<body>
+  <div class="mainBodyContainer">
+    <div class="mainPageWidthAndHeight" align="center">   
+      <div class="noprint">	  
+	    <div>
+	      <div class="titleContainer" style="background-color:#4A7DD6;">	      
+	        <div class="mainTitle"></div>
+	      </div>
+	    </div>
+	    <div style="background-color:#293c6b;line-height:0px;height:1px;">		     
+		  <!--  -->
+	    </div>  
+	    <div class="navTopContainer"></div>
+        <div style="text-align:left;background-image: url(http://nwnshspcs01v/creativeportal/assets/client/images/bg.jpg)"><img src="http://nwnshspcs01v/creativeportal/assets/client/images/NewsLogo.jpg"width="526" height="54" alt="" /></div>		 
+        <div style="background-color:#293c6b;line-height:0px;height:1px;">		     
+		  <!--  -->
+	    </div>
+	    <div>
+	      <div class="titleContainer" style="background-image: url(http://nwnshspcs01v/creativeportal/assets/client/images/titleGrad.jpg);  background-repeat:repeat;">	      
+	       <div class="mainTitle">Creative Portal</div>
+	      </div>
+	    </div>
+		<div style="background-color:#293c6b;line-height:0px;height:1px;">		     
+		  <!--  -->
+	    </div>
+	    <div style="height:12px;text-align:left;padding:2px 0px 2px 8px;">
+	      <a href="http://nwnshspcs01v/creativeportal/forms/Marketing/index.php">New</a> > 
+		          <a href="http://nwnshspcs01v/creativeportal/forms/links.php?form_name=default\">JSON files</a> >
+                        <a href="http://nwnshspcs01v/creativeportal/forms//index.php"></a> > 
+                	    </div>
+	  </div>
+	  <!--<div class="pageContainer">-->
+  		<div class="contentContainer">    
+	  
+	   <script type="text/javascript">
+    
+    function show_div() {
+        
+        $("#press_advertisement_div").hide();
+        $("#flyer_width_div").hide();
+        $("#flyer_height_div").hide();
+        $("#pos_width_div").hide();
+        $("#pos_height_div").hide();
+        
+        for (i = 0; i < arguments.length; i++) {
+            
+            $(arguments[i]).show();        
+            
+        }
+        
+	    }
+    
+    $(document).ready(function() {
+        
+                    $("#type_of_request_print_div").hide();
+            $("#press_ad_div").hide();
+            $("#flyer_width_div").hide();
+            $("#flyer_height_div").hide();
+            $("#pos_width_div").hide();
+            $("#pos_height_div").hide();
+            });
+
+ </script>
+<!--<a href="http://nwnshspcs01v/creativeportal/forms/digital/index.php">JSON Files</a>-->
+<form id="Marketing" name="Marketing" action="http://nwnshspcs01v/creativeportal/forms/process.php" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="form_name" id="form_name" value="Marketing" />
+	        <style type="text/css">
+            .form_title { width:720px; margin: auto; border: 0px solid #000; padding: 20px 0px 5px 0px; font-size: 16px; text-transform: uppercase; }
+            .sub_title { padding: 10px 0px 0px 0px; font-size: 16px; }
+            .section_title { padding: 10px 0px 0px 0px; font-size: 16px }
+            .section_title_container { padding: 10px 0px 0px 0px; font-size: 14px; width:98%; margin: auto; xbackground-color: #f0f0f0; }
+            .outer_container { border:0px solid #000; width:700px; margin: auto}
+            .inner_container { border:0px solid #000; width:700px; margin: auto; background:rgba(255,255,255,0.5); }
+            .inner_box { display: inline-block; border: 0px solid #000; position: relative; margin: 1%; width:49%;  float:left; margin:0; background:#7f7f7f; background:rgba(255,255,255,0.5); } 
+            .html_title { padding:10px 0px 4px 0px; xborder: 1px solid #000 }
+            .element_spacing { padding:0px 0px 10px 0px; }
+            .hr_spacing { padding: 0px 0px 10px 0px; }
+            .grey_bg { xbackground-color: #f0f0f0; }
+            hr { border-color: #0082DA ; }
+        </style>        
+        <div class="form_title">Marketing</div>
+        <div class="outer_container">
+                    <div class="sub_title">Your Details</div>
+        <div class="hr_spacing">
+            <hr />
+        </div>
+                 <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">First Name</div>
+                <div class="element_spacing, grey_bg"><input type="text" size="25" name="first_name" id="first_name" value="" class="textBox"  /></div>
+            </div>
+                 </div>
+                 <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Last Name</div>
+                <div class="element_spacing, grey_bg"><input type="text" size="25" name="last_name" id="last_name" value="" class="textBox"  /></div>
+            </div>
+                 </div>
+                 <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Phone</div>
+                <div class="element_spacing, grey_bg"><input type="text" size="20" name="phone" id="phone" value="" class="textBox"  /></div>
+            </div>
+                 </div>
+                 <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Email</div>
+                <div class="element_spacing, grey_bg"><input type="text" size="30" name="email" id="email" value="" class="textBox"  /></div>
+            </div>
+                 </div>
+                <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">State</div>
+                <div class="element_spacing">
+                    <select name="state" id="state">
+                        <option value=""> -- select -- </option>
+                                                            <option value="NSW">NSW</option>
+                                                                        <option value="QLD">QLD</option>
+                                                                        <option value="SA">SA</option>
+                                                                        <option value="TAS">TAS</option>
+                                                                        <option value="VIC">VIC</option>
+                                                                        <option value="WA">WA</option>
+                                                        </select>
+                </div>
+            </div>
+        </div>
+                    <br style="clear:both" />
+                    <div class="sub_title">Project Details</div>
+        <div class="hr_spacing">
+            <hr />
+        </div>
+                </div>
+        <div class="outer_container">
+                    <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <div style="padding:3px 0px 10px 0px;">
+                    <div class="html_title">Type of work</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_work[]" id="type_of_work" value="type_of_work" />&nbsp;&nbsp;Consumer Marketing&nbsp;&nbsp;&nbsp;</div>
+                                                                        <br style="clear:both" />
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_work[]" id="type_of_work" value="type_of_work" />&nbsp;&nbsp;Trade Marketing&nbsp;&nbsp;&nbsp;</div>
+                                                    </div>
+            </div>
+                            <br style="clear:both" />
+                        </div>
+                 <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Project Name</div>
+                <div class="element_spacing, grey_bg"><input type="text" size="20" name="project_name" id="project_name" value="" class="textBox"  /></div>
+            </div>
+                 </div>
+                    <br style="clear:both" />
+                    <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <div style="padding:3px 0px 10px 0px;">
+                    <div class="html_title">Platform</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="platform[]" id="platform" value="platform" />&nbsp;&nbsp;Print&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="platform[]" id="platform" value="platform" />&nbsp;&nbsp;Digital&nbsp;&nbsp;&nbsp;</div>
+                                                                        <br style="clear:both" />
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="platform[]" id="platform" value="platform" />&nbsp;&nbsp;Copywriting&nbsp;&nbsp;&nbsp;</div>
+                                                    </div>
+            </div>
+                            <br style="clear:both" />
+                        </div>
+                <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <div style="padding:3px 0px 10px 0px;">
+                    <div class="html_title">Addition To Recent Request</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="addition_to_recent_request[]" id="addition_to_recent_request" value="addition_to_recent_request" />&nbsp;&nbsp;Yes&nbsp;&nbsp;&nbsp;</div>
+                                                                        <br style="clear:both" />
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="addition_to_recent_request[]" id="addition_to_recent_request" value="addition_to_recent_request" />&nbsp;&nbsp;No&nbsp;&nbsp;&nbsp;</div>
+                                                    </div>
+            </div>
+                            <br style="clear:both" />
+                        </div>
+                 <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Due Date</div>
+                <div class="element_spacing, grey_bg"><input type="text" size="20" name="due_date" id="due_date" value="" class="textBox"  /></div>
+            </div>
+                 </div>
+                    <br style="clear:both" />
+                    <div class="sub_title">Print</div>
+        <div class="hr_spacing">
+            <hr />
+        </div>
+                <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <div style="padding:3px 0px 10px 0px;">
+                    <div class="html_title">Type Of Request</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_request_print[]" id="type_of_request_print" value="type_of_request_print" />&nbsp;&nbsp;Press Advertising&nbsp;&nbsp;&nbsp;</div>
+                                                                        <br style="clear:both" />
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_request_print[]" id="type_of_request_print" value="type_of_request_print" />&nbsp;&nbsp;Flyer&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_request_print[]" id="type_of_request_print" value="type_of_request_print" />&nbsp;&nbsp;POS&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_request_print[]" id="type_of_request_print" value="type_of_request_print" />&nbsp;&nbsp;Array&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_request_print[]" id="type_of_request_print" value="type_of_request_print" />&nbsp;&nbsp;Presentation&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_request_print[]" id="type_of_request_print" value="type_of_request_print" />&nbsp;&nbsp;Invitation / Greeting Card&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_request_print[]" id="type_of_request_print" value="type_of_request_print" />&nbsp;&nbsp;Illustration&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_request_print[]" id="type_of_request_print" value="type_of_request_print" />&nbsp;&nbsp;Illustration&nbsp;&nbsp;&nbsp;</div>
+                                                    </div>
+            </div>
+                            <br style="clear:both" />
+                        </div>
+                    <br style="clear:both" />
+                    <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Publication</div>
+                <div class="element_spacing">
+                    <select name="publication" id="publication">
+                        <option value=""> -- select -- </option>
+                                                            <option value="Blacktown_Advocate">Blacktown Advocate</option>
+                                                                        <option value="The_Daily_Telegraph">The Daily Telegraph</option>
+                                                                        <option value="The_Australian">The Australian</option>
+                                                                        <option value="Central_Coast_Express_South">Central Coast Express South</option>
+                                                                        <option value="Central_Coast_Express_North">Central Coast Express North</option>
+                                                                        <option value="Inner_West_Courier">Inner West Courier</option>
+                                                                        <option value="Canterbury_Bankstown">Canterbury Bankstown</option>
+                                                                        <option value="Central_Courier">Central Courier</option>
+                                                                        <option value="Rouse_Hill_Times">Rouse Hill Times</option>
+                                                                        <option value="Hill_Shire_Times">Hill Shire Times</option>
+                                                                        <option value="Fairfield_Advance">Fairfield Advance</option>
+                                                                        <option value="Manly_Daily">Manly Daily</option>
+                                                                        <option value="Bayside_Leader">Bayside Leader</option>
+                                                        </select>
+                </div>
+            </div>
+        </div>
+                    <br style="clear:both" />
+                    <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <div style="padding:3px 0px 10px 0px;">
+                    <div class="html_title">Ad Size</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M2x2&nbsp;&nbsp;&nbsp;</div>
+                                                                        <br style="clear:both" />
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M3x2&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M4x2&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M5x2&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M6x2&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M12x2&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M3x3&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M4x3&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M5x3&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M6x3&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M12x3&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M3x4&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M9x4&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M12x4&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M2x6&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M3x6&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M4x6&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M6x6&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M12x6&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M3x12&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M6x12&nbsp;&nbsp;&nbsp;</div>
+                                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="ad_size[]" id="press_advertisement" value="press_advertisement" />&nbsp;&nbsp;M12x12&nbsp;&nbsp;&nbsp;</div>
+                                                    </div>
+            </div>
+                            <br style="clear:both" />
+                        </div>
+                    <br style="clear:both" />
+                    <div class="section_title_container">
+            <div class="section_title">POS (mm width x depth)</div>
+            <div class="hr_spacing">
+                <hr />
+            </div>
+                     <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">POS Width</div>
+                <div class="element_spacing, grey_bg"><input type="text" size="20" name="pos_width" id="pos_width" value="" class="textBox"  /></div>
+            </div>
+                 </div>
+                 <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">POS Depth</div>
+                <div class="element_spacing, grey_bg"><input type="text" size="20" name="pos_depth" id="pos_depth" value="" class="textBox"  /></div>
+            </div>
+                 </div>
+                 <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Other</div>
+                <div class="element_spacing, grey_bg"><input type="text" size="80" name="pos_other" id="pos_other" value="" class="textBox"  /></div>
+            </div>
+                 </div>
+                </div>
+                    <br style="clear:both" />
+                    <div class="inner_container">
+            <div class="inner_box" style="width:50%;">
+                <div style="padding:3px 0px 10px 0px;">
+                    <div class="html_title">Bleed</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="bleed[]" id="bleed" value="bleed" />&nbsp;&nbsp;Yes&nbsp;&nbsp;&nbsp;</div>
+                                                                        <br style="clear:both" />
+                                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="bleed[]" id="bleed" value="bleed" />&nbsp;&nbsp;No&nbsp;&nbsp;&nbsp;</div>
+                                                    </div>
+            </div>
+                    </div>
+                    <br style="clear:both" />
+        </div>
+        <div class="outer_container">
+                    <div class="sub_title">Creative Details</div>
+        <div class="hr_spacing">
+            <hr />
+        </div>
+                    <div class="inner_container" style="width: 100%;border:0px solid #000;">
+               
+         <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">In basic terms what is required?</div>
+                <div class="element_spacing">
+                    <span><textarea name="whats_required" id="whats_required" rows="4" cols="50" class="textBox"></textarea></span>
+                </div>
+            </div>
+        </div>
+		<!--<input type="hidden" name="whats_required_name" value="whats_required_value" />-->
+                </div>
+        </div><br style="clear:both" />
+        <div class="outer_container">
+                    </div>
+        	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			
+			/*$("#press_advertisement_div").hide();
+			$("#flyer_width_div").hide();
+			$("#flyer_height_div").hide();
+			$("#pos_width_div").hide();
+			$("#pos_height_div").hide();*/
+			
+			$('#Marketing').validate({ // initialize the plugin
+			
+				rules: {
+				
+					first_name: {
+						required: true,
+						email: false
+					},
+					last_name: {
+						required: true,
+						minlength: 5
+					},
+					phone: {
+						required: true,
+						number: true
+					},
+					email: {
+						required: true,
+						email: true
+					}
+					
+				}
+				
+			});
+			
+			
+		});
+		
+	</script>
+	<div style="padding:0px 0px 20px 0px;"></div>
+</form>
+    <script type="text/javascript">
+		//** date picker
+	$(function() {
+
+		var pickerOpts = {
+			dateFormat: "dd/mm/yy"
+
+		}
+
+		$('#press_date').datepicker(pickerOpts);
+		$('#pub_date').datepicker(pickerOpts);
+
+	});
+
+	</script>
+	
+	</div><!-- end mainPageWidthAndHeight -->
+  </div><!-- end mainBodyContainer -->
+</body>
+</html>

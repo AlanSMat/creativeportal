@@ -1,0 +1,11 @@
+NSW
+NT
+QLD - Brisbane
+QLD - Cairns
+QLD - Townsville
+QLD - Gold Coast
+SA
+TAS
+VIC - Geelong
+VIC - Melbourne
+WA

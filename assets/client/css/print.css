@@ -1,0 +1,31 @@
+﻿body {
+
+	margin:10px 10px 10px 10px;
+}
+
+td, p, div, td 
+{
+	font-family:verdana;
+	font-size:12px;
+}
+
+.noprint 
+{
+	display:none;	
+}
+
+.viewCell1 
+{
+  text-align:left; 
+  width:130px; 
+  font-weight:bold;  
+  font-size: 12px;  	
+}
+
+.viewCell2
+{
+  text-align:left; 
+  width:500px;   
+  padding-right:50px;
+  font-size: 12px;    
+}

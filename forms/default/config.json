@@ -1,0 +1,1404 @@
+{
+	"Name1"                 : "#Creative Campaign",
+	"Type"                  : "#Customer",
+	"order-source"          : "#CreativePortal",
+	"ad-width"              : "ms_ad_width",
+	"named-ad-size"         : "ms_named_ad_size",
+	"color"                 : "#Process",
+	"color-comments"        : "#No",
+	"email"                 : "email",
+	"production-comments"   : "email + state + ad-sold-by",
+	"publication"           : "ms_publication",
+	"sort-text"             : "press_date",
+	"date"                  : "pub_date",
+	"pressSection"          : "#Print",
+        "publication-placement" : "#Other",
+	"production-method"     : "ms_prod_method",
+	"ad-sold-by"            : "#CreativeCampaign",
+	"ad-entered-by"         : "#CreativeCampaign",
+	"order-status"          : "#Active",
+
+	"first_name": [
+	
+		{   
+                    "section_name" : "Your_details", 
+		    "element_type" : "text" ,
+		    "element_name" : "first_name",
+                   "element_value" : "",
+		      "html_title" : "First Name", 
+		        "required" : "1",
+		            "size" : "30",
+		       "css_class" : "textBox",
+		         "onclick" : "",
+		         "xml_tag" : "",
+                              "id" : "first_name",
+                 "format_settings" : [{
+                                     "inner_box_width"     : "50%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"   : "2"
+                                 }]
+		}
+		
+	],
+	
+	"last_name" : [
+	
+		{   
+                    "section_name" : "Your_details", 
+		    "element_type" : "text" ,
+		    "element_name" : "last_name",
+                   "element_value" : "",
+		      "html_title" : "Last Name", 
+		        "required" : "1",
+		            "size" : "30",
+		       "css_class" : "textBox",
+		         "onclick" : "",
+		         "xml_tag" : "",
+		              "id" : "last_name",
+                 "format_settings" : [{
+                                     "inner_box_width"     : "50%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"   : "2"
+                                 }]
+		}
+		
+	],
+
+	"phone" : [
+	
+		{   
+		    "section_name" : "Your_details", 
+		    "element_type" : "text" ,
+		    "element_name" : "phone",
+                   "element_value" : "",
+		      "html_title" : "Phone (numbers only, no spaces)", 
+		        "required" : "1",
+		            "size" : "30",
+		       "css_class" : "textBox",
+		         "onclick" : "",
+		         "xml_tag" : "",
+			      "id" : "phone",
+                    "format_settings"  : [{
+                                     "inner_box_width"     : "50%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"   : "2"
+                                 }]
+		}
+		
+	],
+	
+	"email" : [
+	
+		{   
+                    "section_name" : "Your_details", 
+		    "element_type" : "text" ,
+		    "element_name" : "email", 
+                   "element_value" : "",
+		      "html_title" : "Email", 
+		        "required" : "1",
+		            "size" : "30",
+		       "css_class" : "textBox",
+		         "onclick" : "",
+		         "xml_tag" : "",
+                              "id" : "email",
+                 "format_settings" : [{
+                                     "inner_box_width"     : "50%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"   : "2"
+                                 }]
+		}
+		
+	],
+        
+	"state" : [
+	
+		{   
+                    "section_name" : "Your details", 
+		    "element_type" : "select" ,
+		    "element_name" : "state", 
+		      "html_title" : "State",
+		       "data_file" : "state_list.txt",
+		        "required" : "1",
+		            "size" : "20",
+		       "css_class" : "",
+		         "onclick" : "",
+		         "xml_tag" : "State",
+                              "id" : "state",
+                 "format_settings" : [{
+                                     "inner_box_width"     : "100%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"   : "2"
+                                 }]
+		}
+		
+	],
+
+        "category_radio" : [
+	
+            {   
+                 "section_name" : "Category", 
+                 "element_type" : "radio" ,
+                 "element_name" : "category_radio", 
+                   "html_title" : "", 
+                     "required" : "1",
+                         "size" : "20",
+                    "css_class" : "textBox",
+                    "hide_show" : "0",
+            "format_settings" : [{
+                                "inner_box_width"       : "98%",
+                                "element_spacing_width" : "160px",
+                                "elements_per_line"     : "1"
+                                }],
+                    "list_item" : [{
+                                    "marketing   -> onclick = \"show_container('#category_marketing_container')\""   : "Marketing",
+                                    "advertising -> onclick = \"show_container('#category_advertising_container')\"" : "Advertising"
+                                  }],
+                "xml_tag"     : "",
+                "id"          : "category_radio"
+            }
+		
+	],
+        
+        "category_marketing_radio" : [
+	
+            {   
+               "section_name" : "Marketing Department", 
+               "element_type" : "radio" ,
+               "element_name" : "category_marketing_radio", 
+                "html_title"  : "", 
+                "required"    : "1",
+                "size"        : "20",
+                "css_class"   : "textBox",
+                "hide_show"   : "1",
+                "list_item"   : [{
+                                "national_group" : "National / Group",
+                                "communities"    : "Communities",
+                                "regional"       : "Regional",
+                                "metro"          : "Metro",
+                                "the_australian" : "The Australian"
+                                }],
+                "format_settings"  : [{
+                                     "inner_box_width"       : "50%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"     : "2"
+                                     }],
+                "xml_tag"     : "",
+                "id"          : "category_marketing_radio"
+            }
+	],
+        
+        "category_marketing_textarea" : [
+	
+		{   
+		    "section_name" : "Marketing Department", 
+		    "element_type" : "text-area" ,
+		    "element_name" : "category_marketing_textarea", 
+		      "html_title" : "Other", 
+		        "required" : "1",
+		            "size" : "20",
+			    "rows" : "4",
+			    "cols" : "50",
+		     "css_class"   : "textBox",
+		         "xml_tag" : "",
+                              "id" : "category_marketing_textarea",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "98%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line" : "2"
+                                   }]                    
+		}
+		
+	],
+
+        "category_advertising_checkbox" : [
+	
+            {   
+               "section_name" : "advertising", 
+               "element_type" : "checkbox" ,
+               "element_name" : "category_advertising_checkbox", 
+                "html_title"  : "", 
+                "required"    : "1",
+                "size"        : "20",
+                "css_class"   : "textBox",
+                "hide_show"   : "1",
+                "list_item"   : [{
+                                "adv_communities"    : "Communities",
+                                "adv_regional"       : "Regional",
+                                "adv_metro"          : "Metro",
+                                "adv_the_australian" : "The Australian"                             
+                                }],
+                "format_settings"  : [{
+                                     "inner_box_width"       : "50%",
+                                     "element_spacing_width" : "230px",
+                                     "elements_per_line"     : "2"
+                                     }],
+                "xml_tag"     : "",
+                "id"           : "category_advertising_checkbox"
+            }
+	],
+
+        "category_advertising_textarea" : [
+	
+		{   
+		    "section_name" : "Advertising Department", 
+		    "element_type" : "text-area" ,
+		    "element_name" : "category_advertising_textarea", 
+		      "html_title" : "Other", 
+		        "required" : "1",
+		            "size" : "20",
+			    "rows" : "4",
+			    "cols" : "50",
+		     "css_class"   : "textBox",
+		         "xml_tag" : "",
+				 "id" : "category_advertising_textarea",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "98%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line" : "2"
+                                   }]                    
+		}
+		
+	],
+        
+        "category_marketing_campaign_division_radio" : [
+	
+            {   
+               "section_name" : "Campaign Division", 
+               "element_type" : "radio" ,
+               "element_name" : "category_marketing_campaign_division_radio", 
+                "html_title"  : "", 
+                "required"    : "1",
+                "size"        : "20",
+                "css_class"   : "textBox",
+                "hide_show"   : "1",
+                "list_item"   : [{
+                                "acquisition" : "Acquisition",
+                                "rewards"     : "Rewards",
+                                "retention"   : "Retention",
+                                "retail"      : "Retail",
+                                "trade"       : "Trade"
+                                }],
+                "format_settings"  : [{
+                                     "inner_box_width"       : "50%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"     : "2"
+                                     }],
+                "xml_tag"     : "",
+                "id"           : "category_marketing_campaign_division_radio"
+            }
+	],  
+
+        "category_advertising_the_advertiser_advertiser_name_text" : [
+	
+            {   
+                "section_name" : "advertising", 
+                "element_type" : "text" ,
+                "element_name" : "category_advertising_the_advertiser_advertiser_name_text", 
+                  "html_title" : "Advertiser Name", 
+                    "required" : "1",
+                        "size" : "30",
+                   "css_class" : "textBox",
+                     "onclick" : "",
+                     "xml_tag" : "",
+                          "id" : "category_advertising_the_advertiser_advertiser_name_text",
+             "format_settings" : [{
+                                 "inner_box_width"     : "48%",
+                                 "element_spacing_width" : "200px",
+                                 "elements_per_line"   : "1"
+                             }]
+            }
+		
+	],
+        
+        "category_advertising_the_advertiser_opportunity_name_text" : [
+	
+            {   
+                "section_name" : "advertising", 
+                "element_type" : "text" ,
+                "element_name" : "category_advertising_the_advertiser_opportunity_name_text", 
+                  "html_title" : "Opportunity Name (Sales Force)", 
+                    "required" : "1",
+                        "size" : "30",
+                   "css_class" : "textBox",
+                     "onclick" : "",
+                     "xml_tag" : "",
+                          "id" : "category_advertising_the_advertiser_opportunity_name_text",
+             "format_settings" : [{
+                                 "inner_box_width"     : "48%",
+                                 "element_spacing_width" : "200px",
+                                 "elements_per_line"   : "1"
+                             }]
+            }
+		
+	],        
+        
+        "category_advertising_the_advertiser_product_service_text" : [
+	
+            {   
+                "section_name" : "advertising", 
+                "element_type" : "text" ,
+                "element_name" : "category_advertising_the_advertiser_product_service_text", 
+                  "html_title" : "Product Service", 
+                    "required" : "1",
+                        "size" : "30",
+                   "css_class" : "textBox",
+                     "onclick" : "",
+                     "xml_tag" : "",
+                          "id" : "category_advertising_the_advertiser_product_service_text",
+             "format_settings" : [{
+                                 "inner_box_width"     : "48%",
+                                 "element_spacing_width" : "200px",
+                                 "elements_per_line"   : "1"
+                             }]
+            }
+		
+	],
+        
+        "category_advertising_the_advertiser_website_text" : [
+	
+            {   
+                "section_name" : "advertising", 
+                "element_type" : "text" ,
+                "element_name" : "category_advertising_the_advertiser_website_text", 
+                  "html_title" : "Website", 
+                    "required" : "1",
+                        "size" : "30",
+                   "css_class" : "textBox",
+                     "onclick" : "",
+                     "xml_tag" : "",
+                          "id" : "category_advertising_the_advertiser_website_text",
+             "format_settings" : [{
+                                 "inner_box_width"     : "48%",
+                                 "element_spacing_width" : "200px",
+                                 "elements_per_line"   : "1"
+                             }]
+            }
+		
+	],
+        
+        "category_advertising_the_advertiser_ad_campaign_value_text" : [
+	
+            {   
+                "section_name" : "advertising", 
+                "element_type" : "text" ,
+                "element_name" : "category_advertising_the_advertiser_ad_campaign_value_text", 
+                  "html_title" : "Ad / Campaign Value", 
+                    "required" : "1",
+                        "size" : "30",
+                   "css_class" : "textBox",
+                     "onclick" : "",
+                     "xml_tag" : "",
+                          "id" : "category_advertising_the_advertiser_ad_campaign_value",
+             "format_settings" : [{
+                                 "inner_box_width"     : "48%",
+                                 "element_spacing_width" : "200px",
+                                 "elements_per_line"   : "1"
+                             }]
+            }
+		
+	],
+        
+        "category_advertising_the_advertiser_potential_text" : [
+	
+            {   
+                "section_name" : "advertising", 
+                "element_type" : "text" ,
+                "element_name" : "category_advertising_the_advertiser_potential_text", 
+                  "html_title" : "Potential", 
+                    "required" : "1",
+                        "size" : "30",
+                   "css_class" : "textBox",
+                     "onclick" : "",
+                     "xml_tag" : "",
+                          "id" : "category_advertising_the_advertiser_potential_text",
+             "format_settings" : [{
+                                 "inner_box_width"     : "48%",
+                                 "element_spacing_width" : "200px",
+                                 "elements_per_line"   : "1"
+                             }]
+            }
+		
+	],
+        
+        "category_advertising_the_advertiser_is_this_a_checkbox" : [
+	
+            {   
+               "section_name" : "advertising", 
+               "element_type" : "checkbox" ,
+               "element_name" : "category_advertising_the_advertiser_is_this_a_checkbox", 
+                "html_title"  : "Is this a", 
+                "required"    : "1",
+                "size"        : "20",
+                "css_class"   : "textBox",
+                "hide_show"   : "1",
+                "list_item"   : [{
+                                "pitch_for_new_business"   : "Pitch for new business",
+                                "pitch_to_retain_business" : "Pitch to retain business",
+                                "live_ad_campaign"         : "Live ad campaign"
+                                }],
+                "format_settings"  : [{
+                                     "inner_box_width"       : "50%",
+                                     "element_spacing_width" : "230px",
+                                     "elements_per_line"     : "2"
+                                     }],
+                "xml_tag"     : "",
+                "id"           : "category_advertising_the_advertiser_is_this_a_checkbox"
+            }
+	],
+        
+        "the_job_project_name_text" : [
+	
+            {   
+                "section_name" : "advertising", 
+                "element_type" : "text" ,
+                "element_name" : "the_job_project_name_text", 
+                  "html_title" : "Project Name", 
+                    "required" : "1",
+                        "size" : "30",
+                   "css_class" : "textBox",
+                     "onclick" : "",
+                     "xml_tag" : "",
+                          "id" : "the_job_project_name_text",
+             "format_settings" : [{
+                                 "inner_box_width"     : "100%",
+                                 "element_spacing_width" : "500px",
+                                 "elements_per_line"   : "1"
+                             }]
+            }
+		
+	],
+
+	"the_job_radio" : [
+	
+            {   
+               "section_name" : "the_job_radio", 
+               "element_type" : "radio" ,
+               "element_name" : "the_job_radio", 
+                 "html_title" : "", 
+                   "required" : "1",
+                       "size" : "20",
+                  "css_class" : "textBox",
+                  "hide_show" : "0",
+            "format_settings" : [{
+                                 "inner_box_width"     : "100%",
+                                 "element_spacing_width" : "160px",
+                                 "elements_per_line"   : "3"
+                             }],
+                  "list_item" : [{
+                            "print          -> onclick = \"show_container('print_only')\""       : "Print",
+                            "digital        -> onclick = \"show_container('digital_only')\""     : "Digital",
+                            "print_digital -> onclick = \"show_container('print_and_digital')\""  : "Print &amp; Digital"
+                    }],
+                "xml_tag"     : "",
+                "id"          : "the_job_radio"
+            }
+		
+	],
+        
+	"the_job_print_bleed_radio" : [
+	
+		{   
+		    "section_name" : "bleed", 
+		    "element_type" : "radio" ,
+		    "element_name" : "the_job_print_bleed_radio", 
+		      "html_title" : "Bleed", 
+		        "required" : "1",
+		            "size" : "20",
+		       "css_class" : "textBox",
+		       "list_item" : [{
+                               "sub_section" : "press_advertising",
+                                "html_title" : "Bleed",
+			               "yes" : "Yes",
+			                "no" : "No"
+			        }],
+                 "format_settings" : [{
+                                     "inner_box_width"       : "100%",
+                                     "element_spacing_width" : "100px",
+                                     "elements_per_line"     : "2"
+                                   }],
+		         "xml_tag" : "",
+			      "id" : "the_job_print_bleed_radio"
+			
+		}
+		
+	],
+        
+	"proof_date" : [
+	
+            {   
+               "section_name" : "proof_date", 
+               "element_type" : "text" ,
+               "element_name" : "proof_date", 
+                 "html_title" : "Proof Date", 
+                   "readonly" : "readonly",
+                   "required" : "1",
+                       "size" : "20",
+                  "css_class" : "textBox",
+                    "onclick" : "",
+                    "xml_tag" : "",
+                         "id" : "proof_date",
+            "format_settings" : [{
+                                 "inner_box_width"       : "100%",
+                                 "element_spacing_width" : "200px",                                
+                                 "elements_per_line"     : "1"
+                             }]
+            }
+		
+	],
+        
+        "addition_to_recent_request" : [
+	
+            {   
+                 "section_name" : "project_details", 
+                 "element_type" : "radio" ,
+                 "element_name" : "addition_to_recent_request", 
+                   "html_title" : "Addition To Recent Request?", 
+                     "required" : "1",
+                         "size" : "20",
+                    "css_class" : "textBox",
+                    "hide_show" : "0",
+                    "list_item" : [{
+                          "sub_section" : "press_advertising",
+                          "html_title"  : "Addition to a Recent Request?",
+                          "existing_job_number_yes -> onclick = \"show_container('#existing_job_number_container')\"" : "Yes",
+                          "existing_job_number_no  -> onclick = \"hide_container('#existing_job_number_container')\"" : "No"
+                    }],
+                    "format_settings"  : [{
+                                     "inner_box_width"     : "100%",
+                                     "element_spacing_width" : "100px",
+                                     "elements_per_line"   : "2"
+                                    }], 
+                "xml_tag"     : "",
+                "id"          : "addition_to_recent_request"
+            }
+		
+	],
+        
+	"existing_job_number" : [
+	
+            {   
+               "section_name" : "existing_job_number", 
+               "element_type" : "text" ,
+               "element_name" : "existing_job_number", 
+                 "html_title" : "Existing Job Number", 
+                   "required" : "1",
+                       "size" : "20",
+                  "css_class" : "textBox",
+                    "onclick" : "",
+                    "xml_tag" : "",
+                         "id" : "existing_job_number",
+            "format_settings" : [{
+                                 "inner_box_width"       : "100%",
+                                 "element_spacing_width" : "200px",                                
+                                 "elements_per_line"     : "1"
+                             }]
+            }
+		
+	],        
+
+	"the_job_is_live_job" : [
+	
+		{   
+		    "section_name" : "the_job_is_live_job", 
+		    "element_type" : "radio" ,
+		    "element_name" : "the_job_is_live_job", 
+		      "html_title" : "Is this a live job?", 
+		        "required" : "1",
+		            "size" : "20",
+		       "css_class" : "textBox",
+		       "list_item" : [{
+                               "sub_section" : "the_job_is_live_job",
+                                "html_title" : "Is this a live job?",
+			               "yes -> onclick = \"show_container('#proof_date_container')\"" : "Yes",
+			                "no -> onclick = \"hide_show_container('#proof_date_container')\"" : "No"
+			        }],
+                 "format_settings" : [{
+                                     "inner_box_width"       : "100%",
+                                     "element_spacing_width" : "100px",
+                                     "elements_per_line"     : "2"
+                                   }],
+		         "xml_tag" : "",
+			      "id" : "the_job_is_live_job"
+			
+		}
+		
+	],    
+
+        "the_job_print_publication_select" : [
+	
+		{   
+                    "section_name" : "the_job_print", 
+		    "element_type" : "select" ,
+		    "element_name" : "the_job_print_publication_select", 
+		      "html_title" : "Publication",
+		       "data_file" : "publication_list.txt",
+		        "required" : "1",
+		            "size" : "20",
+		       "css_class" : "",
+		         "onclick" : "",
+		         "xml_tag" : "",
+                              "id" : "the_job_print_publication_select",
+                 "format_settings" : [{
+                                     "inner_box_width"     : "100%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"   : "2"
+                                 }]
+		}
+		
+	],
+        
+	"print_size" : [
+	
+            {   
+               "section_name" : "print_size", 
+               "element_type" : "text" ,
+               "element_name" : "print_size", 
+                 "html_title" : "Print Date", 
+                   "required" : "1",
+                       "size" : "20",
+                  "css_class" : "textBox",
+                    "onclick" : "",
+                    "xml_tag" : "print_size",
+                         "id" : "print_size",
+            "format_settings" : [{
+                                 "inner_box_width"     : "50%",
+                                 "element_spacing_width" : "200px",                                
+                                 "elements_per_line"   : "2"
+                             }]
+            }
+		
+	],
+	
+	"press_date" : [
+	
+            {   
+               "section_name" : "press_date", 
+               "element_type" : "text" ,
+               "element_name" : "press_date", 
+                 "html_title" : "Press Date", 
+                   "required" : "1",
+                       "size" : "20",
+                  "css_class" : "textBox",
+                    "onclick" : "",
+                    "xml_tag" : "rundates",
+                         "id" : "rundates",
+            "format_settings" : [{
+                                "inner_box_width"     : "50%",
+                                "element_spacing_width" : "200px",
+                                "elements_per_line"   : "2"
+                                }]
+            }
+		
+	],
+
+        "the_job_print_radio" : [
+	
+            {   
+                "section_name"      : "print", 
+                "element_type"      : "radio" ,
+                "element_name"      : "the_job_print_radio", 
+                "html_title"        : "", 
+                "required"          : "1",
+                "size"              : "20",
+                "css_class"         : "textBox",
+                "elements_per_line" : "2",
+                "column_width"      : "150px",
+                "hide_show"         : "1",
+                "list_item"         : [{
+                                      "sub_section" : "press_advertising",
+                                      "html_title"  : "Press Advertisement (mm depth x width)",
+                                      "the_job_print_ad_sizes_radio       -> onclick = \"hide_show_container('#the_job_print_ad_sizes_container', '#the_job_print_ad_sizes_radio')\""       : "Press Advertising",
+                                      "the_job_print_flyer_radio          -> onclick = \"hide_show_container('#the_job_print_flyer_container',    '#the_job_print_flyer_radio')\""          : "Flyer",
+                                      "the_job_print_pos_radio            -> onclick = \"hide_show_container('#the_job_print_pos_container',      '#the_job_print_pos_radio')\""            : "POS",
+                                      "the_job_print_presentation_radio"   : "Presentation",
+                                      "the_job_print_project_radio"        : "Project",
+                                      "the_job_print_ad_note_radio"        : "Ad Note",
+                                      "the_job_print_creative_shape_radio" : "Creative Shape",
+                                      "the_job_print_wrap_radio"           : "Wrap",
+                                      "the_job_print_invitation_radio"     : "Invitation",
+                                      "the_job_print_other_radio -> onclick = \"hide_show_container('#the_job_print_other_textarea_container','#the_job_print_other_radio')\"" : "Other"
+                                      }],
+                "format_settings"   : [{
+                                      "inner_box_width"     : "50%",
+                                      "element_spacing_width" : "200px",
+                                      "elements_per_line"   : "2"
+                                      }],
+                "xml_tag"           : "",
+                "id"                : "the_job_print_radio"
+            }
+		
+	],
+
+        "the_job_print_other_textarea" : [
+	
+		{   
+		    "section_name" : "whats_required", 
+		    "element_type" : "text-area" ,
+		    "element_name" : "the_job_print_other_textarea", 
+		      "html_title" : "Other", 
+		        "required" : "1",
+		            "size" : "20",
+			    "rows" : "4",
+			    "cols" : "50",
+		     "css_class"   : "textBox",
+		         "xml_tag" : "",
+                              "id" : "the_job_print_other_textarea",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "100%",
+                                     "element_spacing_width" : "800px",
+                                     "elements_per_line" : "1"
+                                   }]                    
+		}
+		
+	],
+
+        "the_job_print_publication_textarea" : [
+	
+		{   
+		    "section_name" : "whats_required", 
+		    "element_type" : "text-area" ,
+		    "element_name" : "the_job_print_publication_textarea", 
+		      "html_title" : "Publication", 
+		        "required" : "1",
+		            "size" : "20",
+			    "rows" : "4",
+			    "cols" : "50",
+		     "css_class"   : "textBox",
+		         "xml_tag" : "",
+				 "id" : "the_job_print_publication_textarea",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "98%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line" : "2"
+                                   }]                    
+		}
+		
+	],
+        
+	"the_job_print_ad_sizes_checkbox" : [
+	
+            {   
+               "section_name" : "print", 
+               "element_type" : "checkbox" ,
+               "element_name" : "the_job_print_ad_sizes_checkbox", 
+                "html_title"  : "", 
+                "required"    : "1",
+                "size"        : "20",
+                "css_class"   : "textBox",
+                "hide_show"   : "1",
+                "list_item"   : [{
+                                "sub_section" : "press_advertising",
+                                "html_title"  : "Press Advertisement (mm depth x width)",
+                                "M2x2"        : "M2x2",
+                                "M3x2"        : "M3x2",
+                                "M4x2"        : "M4x2",
+                                "M5x2"        : "M5x2",
+                                "M6x2"        : "M6x2",
+                                "M6x2"        : "M6x2",
+                                "M2x2"        : "M2x2",
+                                "M3x2"        : "M3x2",
+                                "M4x2"        : "M4x2",
+                                "M5x2"        : "M5x2",
+                                "M6x2"        : "M6x2",
+                                "M12x2"       : "M12x2",
+                                "M3x3"        : "M3x3",
+                                "M4x3"        : "M4x3",
+                                "M5x3"        : "M5x3",
+                                "M6x3"        : "M6x3",
+                                "M12x3"       : "M12x3",
+                                "M3x4"        : "M3x4",
+                                "M9x4"        : "M9x4",
+                                "M12x4"       : "M12x4",
+                                "M2x6"        : "M2x6",
+                                "M3x6"        : "M3x6",
+                                "M4x6"        : "M4x6",
+                                "M6x6"        : "M6x6",
+                                "M12x4"       : "M12x4",
+                                "M12x6"       : "M12x6",
+                                "M3x12"       : "M3x12",
+                                "M6x12"       : "M6x12",
+                                "M12x12"      : "M12x12"                                
+                                
+                                }],
+                "format_settings"  : [{
+                                     "inner_box_width"       : "100%",
+                                     "element_spacing_width" : "100px",
+                                     "elements_per_line"     : "2"
+                                     }],
+                "xml_tag"     : "",
+                "id"          : "the_job_print_ad_sizes_checkbox"
+            }
+	],
+
+	"the_job_print_flyer_width_text" : [
+	
+		{   
+                  "section_name" : "print", 
+		  "element_type" : "text" ,
+		  "element_name" : "the_job_print_flyer_width_text", 
+		    "html_title" : "Flyer Width", 
+		      "required" : "1",
+		          "size" : "20",
+		     "css_class" : "textBox",
+		     "hide_show" : "0",
+		       "onclick" : "",
+		       "xml_tag" : "",
+		            "id" : "the_job_print_flyer_width_text",
+               "format_settings" : [{
+                                   "inner_box_width"     : "50%",
+                                   "element_spacing_width" : "200px",
+                                   "elements_per_line"   : "2"
+                                   }]
+		}
+		
+	],
+
+	"the_job_print_flyer_depth_text" : [
+	
+		{   
+		    "section_name" : "print", 
+		    "element_type" : "text" ,
+		    "element_name" : "the_job_print_flyer_depth_text", 
+		      "html_title" : "Flyer Depth", 
+		        "required" : "1",
+		            "size" : "20",
+		       "css_class" : "textBox",
+		       "hide_show" : "1",
+		         "onclick" : "",
+		         "xml_tag" : "",
+                              "id" : "the_job_print_flyer_depth_text",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "50%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"     : "2"
+                                 }]
+		}
+		
+	],
+	
+        "the_job_print_flyer_other" : [
+	
+		{   
+		    "section_name" : "print", 
+		    "element_type" : "text" ,
+		    "element_name" : "the_job_print_flyer_other", 
+		      "html_title" : "Other", 
+		        "required" : "1",
+		            "size" : "50",
+		       "css_class" : "textBox",
+		       "hide_show" : "1",
+		         "onclick" : "",
+		         "xml_tag" : "",
+                              "id" : "the_job_print_flyer_other",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "50%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"     : "2"
+                                     }]
+		}
+		
+	],
+        
+        "other" : [
+	
+		{   
+		    "section_name" : "print", 
+		    "element_type" : "text" ,
+		    "element_name" : "other", 
+		      "html_title" : "Other", 
+		        "required" : "1",
+		            "size" : "50",
+		       "css_class" : "textBox",
+		       "hide_show" : "1",
+		         "onclick" : "",
+		         "xml_tag" : "",
+                              "id" : "other",
+                 "format_settings" : [{
+                                         "inner_box_width"       : "50%",
+                                         "element_spacing_width" : "200px",
+                                         "elements_per_line"     : "2"
+                                     }]
+		}
+		
+	],        
+
+	"the_job_digital_mobile_desktop_radio" : [
+	
+            {   
+               "section_name" : "digital", 
+               "element_type" : "radio" ,
+               "element_name" : "the_job_digital_mobile_desktop_radio", 
+                "html_title"  : "", 
+                "required"    : "1",
+                "size"        : "20",
+                "css_class"   : "textBox",
+                "hide_show"   : "1",
+                "list_item"   : [{
+                                "sub_section"    : "press_advertising",
+                                "html_title"     : "Mobile Desktop",
+                                "mobile         -> onclick = \"show_container('#the_job_digital_mobile_checkbox_container','#mobile')\""   : "Mobile",
+                                "desktop        -> onclick = \"show_container('#the_job_digital_desktop_checkbox_container','#desktop')\"" : "Desktop",
+                                "mobile_desktop -> onclick = \"show_container('#the_job_digital_desktop_and_mobile_checkbox_container', '#mobile_desktop')\""  : "Mobile &amp; Desktop"
+                                }],
+                "format_settings"  : [{
+                                     "inner_box_width"       : "100%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"     : "1"
+                                     }],
+                "xml_tag"     : "",
+                "id"          : "the_job_digital_mobile_desktop_radio"
+            }
+	],
+
+        "the_job_digital_other_textarea" : [
+	
+		{   
+		    "section_name" : "Other", 
+		    "element_type" : "text-area" ,
+		    "element_name" : "the_job_digital_other_textarea", 
+		      "html_title" : "Other", 
+		        "required" : "1",
+		            "size" : "20",
+			    "rows" : "4",
+			    "cols" : "50",
+		     "css_class"   : "textBox",
+		         "xml_tag" : "",
+                              "id" : "the_job_digital_other_textarea",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "100%",
+                                     "element_spacing_width" : "800px",
+                                     "elements_per_line" : "1"
+                                   }]                    
+		}
+		
+	],
+
+	"the_job_digital_mobile_checkbox" : [
+	
+            {   
+               "section_name" : "digital", 
+               "element_type" : "checkbox" ,
+               "element_name" : "the_job_digital_mobile_checkbox", 
+                "html_title"  : "", 
+                "required"    : "1",
+                "size"        : "20",
+                "css_class"   : "textBox",
+                "hide_show"   : "1",
+                "list_item"   : [{
+                                "sub_section"       : "press_advertising",
+                                "html_title"        : "Mobile",
+                                "mob_leaderboard    -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#mob_leaderboard')\""   : "Leaderboard",
+                                "mob_mrec           -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#mob_mrec')\""          : "MREC",
+                                "mob_spot_expander  -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#mob_spot_expander')\"" : "Spot Expander",
+                                "mob_cube           -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#mob_cube')\""          : "Cube",
+                                "mob_otp            -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#mob_otp')\""           : "OTP",
+                                "mob_other          -> onclick = \"show_container('#the_job_digital_other_textarea_container',          '#mob_other')\""      : "Other"
+                                }],
+                "format_settings"  : [{
+                                     "inner_box_width"       : "30%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"     : "1"
+                                     }],
+                "xml_tag"     : "",
+                "id"          : "the_job_digital_mobile_checkbox"
+            }
+	],
+        
+	"the_job_digital_desktop_checkbox" : [
+	
+            {   
+               "section_name" : "digital", 
+               "element_type" : "checkbox" ,
+               "element_name" : "the_job_digital_desktop_checkbox", 
+                "html_title"  : "", 
+                "required"    : "1",
+                "size"        : "20",
+                "css_class"   : "textBox",
+                "hide_show"   : "1",
+                "list_item"   : [{
+                                "sub_section"       : "press_advertising",
+                                "html_title"        : "Mobile",
+                                "dsk_EDM"       : "EDM",
+                                "dsk_leaderboard    -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#dsk_leaderboard')\""   : "Leaderboard",
+                                "dsk_mrec           -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#dsk_mrec')\"" : "MREC",
+                                "dsk_half_page"     : "Half Page",
+                                "dsk_roadblock"     : "Roadblock",
+                                "dsk_side_skins"    : "Side Skins",
+                                "dsk_super_skins"   : "Super Skins",
+                                "dsk_cube           -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#dsk_cube')\""          : "Cube",
+                                "dsk_lumberjack"    : "Lumberjack",
+                                "dsk_half_page_rmx" : "Half Page RMX",
+                                "dsk_standard_otp   -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#dsk_standard_otp')\""  : "Standard OTP",
+                                "dsk_full_page_otp  -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#dsk_full_page_otp')\"" : "Full Page OTP",
+                                "dsk_spot_expander  -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#dsk_spot_expander')\"" : "Spot Expander",
+                                "dsk_page_flip"     : "Page Flip",
+				"dsk_static_banner" : "Static Banner",
+                                "dsk_other          -> onclick = \"show_container('#the_job_digital_other_textarea_container','#dsk_other')\""      : "Other"
+                                }],
+                "format_settings"  : [{
+                                     "inner_box_width"       : "60%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"     : "1"
+                                     }],
+                "xml_tag"     : "",
+                "id"          : "the_job_digital_desktop_checkbox"
+            }
+	],
+
+        "the_job_digital_desktop_and_mobile_checkbox" : [
+	
+            {   
+               "section_name" : "digital", 
+               "element_type" : "checkbox" ,
+               "element_name" : "the_job_digital_desktop_and_mobile_checkbox", 
+                "html_title"  : "", 
+                "required"    : "1",
+                "size"        : "20",
+                "css_class"   : "textBox",
+                "hide_show"   : "1",
+                "list_item"   : [{
+                                "sub_section"       : "press_advertising",
+                                "html_title"        : "Mobile",
+                                "all_EDM"       : "EDM",
+                                "all_leaderboard -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#all_leaderboard')\"" : "Leaderboard",
+                                "all_mrec -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#all_mrec')\"" : "MREC",
+                                "all_half_page"     : "Half Page",
+                                "all_roadblock"     : "Roadblock",
+                                "all_side_skins"    : "Side Skins",
+                                "all_super_skins"   : "Super Skins",
+                                "all_cube"          : "Cube",
+                                "all_lumberjack"    : "Lumberjack",
+                                "all_half_page_rmx" : "Half Page RMX",
+                                "all_standard_otp -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#all_standard_otp')\"" : "Standard OTP",
+                                "all_full_page_otp" : "Full Page OTP",
+                                "all_otp"           : "OTP",
+                                "all_spot_expander -> onclick = \"show_container('#the_job_digital_campaign_booking_details_container','#all_spot_expander')\"" : "Spot Expander",
+                                "all_video"         : "Video",
+                                "all_page_flip"     : "Page Flip",
+				"all_static_banner" : "Static Banner",
+                                "all_other          -> onclick = \"show_container('#the_job_digital_other_textarea_container','#dsk_other')\""      : "Other"
+                                }],
+                "format_settings"  : [{
+                                     "inner_box_width"       : "60%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"     : "1"
+                                     }],
+                "xml_tag"     : "",
+                "id"          : "the_job_digital_desktop_and_mobile_checkbox"
+            }
+	],
+        
+        "the_job_digital_textarea" : [
+	
+		{   
+		    "section_name" : "digital", 
+		    "element_type" : "text-area" ,
+		    "element_name" : "the_job_digital_textarea", 
+		      "html_title" : "Other", 
+		        "required" : "1",
+		            "size" : "20",
+			    "rows" : "4",
+			    "cols" : "50",
+		     "css_class"   : "textBox",
+		         "xml_tag" : "",
+				 "id" : "the_job_digital_textarea",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "98%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line" : "2"
+                                   }]                    
+		}
+		
+	],
+        
+        "the_job_digital_campaign_booking_details_textarea" : [
+	
+		{   
+		    "section_name" : "digital", 
+		    "element_type" : "text-area" ,
+		    "element_name" : "the_job_digital_campaign_booking_details_textarea", 
+		      "html_title" : "Campaign Booking Details", 
+		        "required" : "1",
+		            "size" : "20",
+			    "rows" : "4",
+			    "cols" : "50",
+		     "css_class"   : "textBox",
+		         "xml_tag" : "",
+				 "id" : "the_job_digital_campaign_booking_details_textarea",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "98%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line" : "2"
+                                   }]                    
+		}
+		
+	],        
+        
+        "the_job_print_pos_checkbox" : [
+	
+            {   
+               "section_name" : "print", 
+               "element_type" : "checkbox" ,
+               "element_name" : "the_job_print_pos_checkbox", 
+                "html_title"  : "", 
+                "required"    : "1",
+                "size"        : "20",
+                "css_class"   : "textBox",
+                "hide_show"   : "1",
+                "list_item"   : [{
+                                "wobbler"    : "Wobbler",
+                                "standee"    : "Standee",
+                                "poster"     : "Poster",
+                                "lifts"      : "Lifts",
+                                "lightboxes" : "Lightboxes",
+                                "poster"     : "Poster",
+                                "other"      : "Other"
+                                
+                                }],
+                "format_settings"  : [{
+                                     "inner_box_width"     : "50%",
+                                     "element_spacing_width" : "180px",
+                                     "elements_per_line"     : "2"
+                                     }],
+                "xml_tag"     : "",
+                "id"          : "the_job_print_pos_checkbox"
+            }
+	],
+
+	"invitation" : [
+	
+		{   
+		    "section_name" : "invitation", 
+		    "element_type" : "text" ,
+		    "element_name" : "inv", 
+		      "html_title" : "Invitation / Greeting Card", 
+		        "required" : "1",
+		            "size" : "60",
+		       "css_class" : "textBox",
+		         "onclick" : "",
+		         "xml_tag" : "",
+		              "id" : "client_name",
+                 "format_settings" : [{
+                                     "inner_box_width"     : "100%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"   : "1"
+                                   }]
+		}
+		
+	],
+	
+	"the_job_print_bleed_radio" : [
+	
+		{   
+		    "section_name" : "bleed", 
+		    "element_type" : "radio" ,
+		    "element_name" : "the_job_print_bleed_radio", 
+		      "html_title" : "Bleed", 
+		        "required" : "1",
+		            "size" : "20",
+		       "css_class" : "textBox",
+		       "list_item" : [{
+                               "sub_section" : "press_advertising",
+                                "html_title" : "Bleed",
+			               "yes" : "Yes",
+			                "no" : "No"
+			        }],
+                 "format_settings" : [{
+                                     "inner_box_width"       : "100%",
+                                     "element_spacing_width" : "100px",
+                                     "elements_per_line"     : "2"
+                                   }],
+		         "xml_tag" : "",
+			      "id" : "the_job_print_bleed_radio"
+			
+		}
+		
+	],
+        
+        "due_date" : [
+	
+            {   
+               "section_name" : "creative_details", 
+               "element_type" : "text" ,
+               "element_name" : "due_date", 
+                 "html_title" : "Due Date",
+                   "readonly" : "readonly",
+                   "required" : "1",
+                       "size" : "20",
+                  "css_class" : "textBox",
+                    "onclick" : "",
+                    "xml_tag" : "sort-text",
+                 "text_right" : "Please allow 5 business days.  If a shorter timeframe is required please contact the studio.",
+                         "id" : "due_date",
+            "format_settings" : [{
+                                 "inner_box_width"     : "100%",
+                                 "element_spacing_width" : "200px",
+                                 "elements_per_line"   : "2"
+                             }]
+            }
+		
+	],
+        
+	"additional_comments" : [
+	
+		{   
+		    "section_name" : "additional_comments", 
+		    "element_type" : "text-area" ,
+		    "element_name" : "additional_comments", 
+		      "html_title" : "Additional Comments", 
+		        "required" : "1",
+		            "size" : "20",
+			    "rows" : "4",
+			    "cols" : "50",
+		       "css_class" : "textBox",
+		         "xml_tag" : "additional_comments",
+			      "id" : "additional_comments",
+                 "format_settings" : [{
+                                     "inner_box_width"     : "50%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"   : "2"
+                                   }]
+			
+		}
+		
+	],
+	
+	"print_project" : [
+	
+		{   
+		    "section_name" : "print_project", 
+		    "element_type" : "text-area" ,
+		    "element_name" : "print_project", 
+		      "html_title" : "Presentationx", 
+		        "required" : "1",
+		            "size" : "20",
+			    "rows" : "4",
+			    "cols" : "50",
+		     "css_class"   : "textBox",
+		         "xml_tag" : "",
+				 "id" : "additional_comments",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "98%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line" : "1"
+                                   }]                    
+		}
+		
+	],
+	
+	"type_of_request" : [
+	
+		{   
+		    "section_name" : "type_of_request", 
+		    "element_type" : "radio" ,
+		    "element_name" : "type_of_request", 
+		      "html_title" : "Type of Request", 
+		        "required" : "1",
+		            "size" : "20",
+		       "css_class" : "textBox",
+		       "list_item" : [{
+                               "sub_section" : "type_of_request",
+                                "html_title" : "type_of_request",
+			               "single_advertisement" : "Single Advertisement",
+			                "campaign"            : "Campaign",
+                                        "feature"             : "Feature"
+			        }],
+                 "format_settings" : [{
+                                     "inner_box_width"       : "100%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line"     : "2"
+                                   }],
+		         "xml_tag" : "",
+			      "id" : "type_of_request"
+			
+		}
+		
+	],        
+        
+	"whats_required" : [
+	
+		{   
+		    "section_name" : "whats_required", 
+		    "element_type" : "text-area" ,
+		    "element_name" : "whats_required", 
+		      "html_title" : "In basic terms what is required?", 
+		        "required" : "1",
+		            "size" : "20",
+			    "rows" : "4",
+			    "cols" : "50",
+		     "css_class"   : "textBox",
+		         "xml_tag" : "",
+				 "id" : "whats_required",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "98%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line" : "2"
+                                   }]                    
+		}
+		
+	],
+        
+	"file_upload" : [
+		{   
+		    "section_name" : "file_upload", 
+		    "element_type" : "file" ,
+		    "element_name" : "file_upload", 
+		      "html_title" : "Attachments (less than 5MB)", 
+		        "required" : "1",
+                            "size" : "20",
+		       "css_class" : "textBox",
+                         "xml_tag" : "",
+			      "id" : "file_upload",
+                 "format_settings" : [{
+                                     "inner_box_width"     : "100%",
+                                     "element_spacing_width" : "300px",
+                                     "elements_per_line"   : "1"
+                                   }]
+			
+		}
+		
+	],
+	
+        "network_location" : [
+	
+            {   
+               "section_name" : "creative_details", 
+               "element_type" : "text" ,
+               "element_name" : "network_location", 
+                 "html_title" : "File Upload - Larger than 5MB", 
+                   "required" : "1",
+                       "size" : "40",
+                  "css_class" : "textBox",
+                    "onclick" : "",
+                    "xml_tag" : "sort-text",
+                 "text_right" : "",
+                         "id" : "due_date",
+            "format_settings" : [{
+                                 "inner_box_width"     : "100%",
+                                 "element_spacing_width" : "750px",
+                                 "elements_per_line"   : "1"
+                             }]
+            }
+		
+	],
+        
+	"submit" : [
+	
+		{   
+		    "section_name" : "submit", 
+		    "element_type" : "submit" ,
+		    "element_name" : "submit", 
+		      "html_title" : "Create Booking", 
+		       "css_class" : "button",
+			      "id" : "file_upload",
+                 "format_settings" : [{
+                                     "inner_box_width"       : "100%",
+                                     "element_spacing_width" : "200px",
+                                     "elements_per_line" : "2"
+                                   }]
+		}
+		
+	]
+	
+	
+}

@@ -1,0 +1,1077 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>MediaSpectrum form to XML</title>
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<link rel="stylesheet" type="text/css" href="http://premwebprod01/creativeportal/assets/client/css/default.css"  media="screen" />    
+	  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	
+	
+  <script src="http://premwebprod01/creativeportal/assets/client/scripts/jquery/jquery.min.js"></script>    
+  <!--<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="http://premwebprod01/creativeportal/assets/client/scripts/jquery/src/core.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="http://premwebprod01/creativeportal/assets/client/scripts/default.js"></script>
+  <script src="http://premwebprod01/creativeportal/assets/client/scripts/hide_show.js"></script>-->
+</head>
+<body style="background-image:url(http://premwebprod01/creativeportal/assets/client/images/cpbg.png); background-repeat:no-repeat; background-attachment:fixed; background-position: 50% 100%; background-size: cover;">
+        <div class="xmainBodyContainer">
+    <!--<div class="mainBodyContainer">-->
+        <div class="mainPageWidthAndHeight" align="center" style="border:1px solid #000;">   
+            <div class="noprint">	  
+                <div><img src="http://premwebprod01/creativeportal/assets/client/images/header.png" xwidth="1024" xheight="50" alt="" /></div>		                 
+                <div class="line"><!--  --></div>
+                <div class="links_container">
+                    <div style="float:left;"></div>
+                    <div style="float:right;padding-right: 5px ;"><a href="http://premwebprod01/creativeportal/forms/default/links.php?links=1">Admin Only</a></div>
+                </div>
+	    </div>
+  	    <div class="contentContainer">
+    	  
+	  <!--<a href="http://premwebprod01/creativeportal/forms/digital/index.php">JSON Files</a>-->
+<form id="default" name="default" action="http://premwebprod01/creativeportal/forms/process.php" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="form_name" id="form_name" value="default" />
+        <style type="text/css">
+            .advertising_department{ width: 700px; margin: auto; }
+            .button { border:1px solid #000; font-size:14px; cursor:pointer; clear:both; padding: 5px 0px 5px 0px; width:180px; }
+            .button:hover { border:1px solid #000; font-size:14px; cursor:pointer; clear:both; background-color:#fff; padding: 5px 0px 5px 0px; width:180px; }
+            .digital_elements{ width: 700px; margin: auto; }
+            .element_spacing { padding:0px 0px 10px 0px; }
+            .first_lvl_section { width: 700px;margin: auto;}
+            .footer_text { clear: both; padding: 10px 0px 10px 0px }
+            form input[type=text] { padding: 5px 0px 4px 3px; }
+            form input[type=select] { padding: 5px 0px 4px 3px; }
+            .grey_bg { xbackground-color: #f0f0f0; }
+            hr { border-color: #0082DA ; }
+            .hr_spacing { padding: 0px 0px 10px 0px; }
+            .html_title { padding:10px 0px 4px 0px; xborder: 1px solid #000 }
+            .inner_container { border:0px solid #000; width:700px; margin: auto; background:rgba(255,255,255,0.5);}
+            .inner_box { padding:3px 0px 10px 0px; display: inline-block; border: 0px solid #000; position: relative; margin: 1%; width:49%;  float:left; margin:0; background:#7f7f7f; background:rgba(255,255,255,0.5); } 
+            .marketing_department{ width:700px; margin:auto; }
+            .outer_container { border:0px solid #000; width:700px; margin: auto}     
+            .print_elements { width: 700px; margin: auto; }
+            .second_lvl_section {}
+            .section_title { padding: 10px 0px 0px 0px; font-size: 16px }
+            .sub_title { padding: 10px 0px 0px 0px; font-size: 18px; }
+            /* sub title spacing */
+            .sub_title_container { clear: both; padding: 10px 0px 0px 0px }
+            .third_lvl_section {}
+        </style>
+     
+        <div class="first_lvl_section" id="brief_submission_container">
+           
+           <div class="your_details">
+               
+               <input type="hidden" name="date_entered" value="12/12/16 11:11:31" />
+                       <div class="sub_title_container">
+                <input type="hidden" name="st_Your_Details" value="" id="st_Your_Details" />
+                <div class="sub_title">Your Details</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                
+        <div class="inner_box" >
+            <div class="html_title">First Name</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="30" name="first_name" id="first_name" value="" class="textBox"  /></div>
+            <div class="error_message" id="first_name_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                
+        <div class="inner_box" >
+            <div class="html_title">Last Name</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="30" name="last_name" id="last_name" value="" class="textBox"  /></div>
+            <div class="error_message" id="last_name_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                
+        <div class="inner_box" >
+            <div class="html_title">Phone (numbers only, no spaces)</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="30" name="phone" id="phone" value="" class="textBox"  /></div>
+            <div class="error_message" id="phone_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                
+        <div class="inner_box" >
+            <div class="html_title">Email</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="30" name="email" id="email" value="" class="textBox"  /></div>
+            <div class="error_message" id="email_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                <div class="inner_container">
+            <div class="inner_box" >
+                <div class="html_title">State</div>
+                <div class="element_spacing">
+                    <select name="state" id="state">
+                        <option value=""> -- select -- </option>
+                                                        <option value="NSW">NSW</option>
+                                                                <option value="NT">NT</option>
+                                                                <option value="QLD_Brisbane">QLD - Brisbane</option>
+                                                                <option value="QLD_Cairns">QLD - Cairns</option>
+                                                                <option value="QLD_Townsville">QLD - Townsville</option>
+                                                                <option value="QLD_Gold_Coast">QLD - Gold Coast</option>
+                                                                <option value="SA">SA</option>
+                                                                <option value="TAS">TAS</option>
+                                                                <option value="VIC_Geelong">VIC - Geelong</option>
+                                                                <option value="VIC_Melbourne">VIC - Melbourne</option>
+                                                                <option value="WA">WA</option>
+                                                    </select>
+                </div>
+            </div>
+        </div>
+                    </div>
+        </div>
+        <div class="first_lvl_section" id="category_container">
+            <div class="category">
+                        <div class="sub_title_container">
+                <input type="hidden" name="st_Category" value="" id="st_Category" />
+                <div class="sub_title">Category</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                <div class="inner_container">
+            <div class="inner_box" style="width:98%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:160px; xborder:1px solid #000;"><input type="radio" name="category_radio[]" onclick = "show_container('#category_marketing_container')" class="textBox" id="marketing" value="marketing" />&nbsp;&nbsp;Marketing&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:160px; xborder:1px solid #000;"><input type="radio" name="category_radio[]" onclick = "show_container('#category_advertising_container')" class="textBox" id="advertising" value="advertising" />&nbsp;&nbsp;Advertising&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="category_radio_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                    </div>
+        </div>
+        <div class="marketing_department">
+                        <div class="sub_title_container">
+                <input type="hidden" name="st_Marketing_Department" value="" id="st_Marketing_Department" />
+                <div class="sub_title">Marketing Department</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                <div class="inner_container">
+            <div class="inner_box" style="width:50%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="category_marketing_radio[]"  class="textBox" id="national_group" value="national_group" />&nbsp;&nbsp;National / Group&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="category_marketing_radio[]"  class="textBox" id="communities" value="communities" />&nbsp;&nbsp;Communities&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="category_marketing_radio[]"  class="textBox" id="regional" value="regional" />&nbsp;&nbsp;Regional&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="category_marketing_radio[]"  class="textBox" id="metro" value="metro" />&nbsp;&nbsp;Metro&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="category_marketing_radio[]"  class="textBox" id="the_australian" value="the_australian" />&nbsp;&nbsp;The Australian&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="category_marketing_radio_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                    <br style="clear : both" />
+               
+        <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Other</div>
+                <div class="element_spacing">
+                    <span><textarea name="category_marketing_textarea" id="category_marketing_textarea" rows="4" cols="50" class="textBox"></textarea></span>
+                </div>
+            </div>
+        </div><br style="clear: both" />
+                    <div class="sub_title_container">
+                <input type="hidden" name="st_Campaign_Division" value="" id="st_Campaign_Division" />
+                <div class="sub_title">Campaign Division</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                <div class="inner_container">
+            <div class="inner_box" style="width:50%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="category_marketing_campaign_division_radio[]"  class="textBox" id="acquisition" value="acquisition" />&nbsp;&nbsp;Acquisition&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="category_marketing_campaign_division_radio[]"  class="textBox" id="rewards" value="rewards" />&nbsp;&nbsp;Rewards&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="category_marketing_campaign_division_radio[]"  class="textBox" id="retention" value="retention" />&nbsp;&nbsp;Retention&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="category_marketing_campaign_division_radio[]"  class="textBox" id="retail" value="retail" />&nbsp;&nbsp;Retail&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="category_marketing_campaign_division_radio[]"  class="textBox" id="trade" value="trade" />&nbsp;&nbsp;Trade&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="category_marketing_campaign_division_radio_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                </div>
+        <div class="advertising_department">
+                         <div class="sub_title_container">
+                <input type="hidden" name="st_Advertising_Department" value="" id="st_Advertising_Department" />
+                <div class="sub_title">Advertising Department</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                <div class="inner_container">
+            <div class="inner_box" style="width:50%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:230px; xborder:1px solid #000;"><input type="checkbox" name="category_advertising_checkbox[]"  class="textBox" id="adv_communities" value="adv_communities" />&nbsp;&nbsp;Communities&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:230px; xborder:1px solid #000;"><input type="checkbox" name="category_advertising_checkbox[]"  class="textBox" id="adv_regional" value="adv_regional" />&nbsp;&nbsp;Regional&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:230px; xborder:1px solid #000;"><input type="checkbox" name="category_advertising_checkbox[]"  class="textBox" id="adv_metro" value="adv_metro" />&nbsp;&nbsp;Metro&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:230px; xborder:1px solid #000;"><input type="checkbox" name="category_advertising_checkbox[]"  class="textBox" id="adv_the_australian" value="adv_the_australian" />&nbsp;&nbsp;The Australian&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="category_advertising_checkbox_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                    <br style="clear : both" />    
+               
+        <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Other</div>
+                <div class="element_spacing">
+                    <span><textarea name="category_advertising_textarea" id="category_advertising_textarea" rows="4" cols="50" class="textBox"></textarea></span>
+                </div>
+            </div>
+        </div><br style="clear: both" />
+                    <div class="sub_title_container">
+                <input type="hidden" name="st_Client_Details" value="" id="st_Client_Details" />
+                <div class="sub_title">Client Details</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                
+        <div class="inner_box" >
+            <div class="html_title">Advertiser Name</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="30" name="category_advertising_the_advertiser_advertiser_name_text" id="category_advertising_the_advertiser_advertiser_name_text" value="" class="textBox"  /></div>
+            <div class="error_message" id="category_advertising_the_advertiser_advertiser_name_text_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                
+        <div class="inner_box" >
+            <div class="html_title">Opportunity Name (Sales Force)</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="30" name="category_advertising_the_advertiser_opportunity_name_text" id="category_advertising_the_advertiser_opportunity_name_text" value="" class="textBox"  /></div>
+            <div class="error_message" id="category_advertising_the_advertiser_opportunity_name_text_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                
+        <div class="inner_box" >
+            <div class="html_title">Product Service</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="30" name="category_advertising_the_advertiser_product_service_text" id="category_advertising_the_advertiser_product_service_text" value="" class="textBox"  /></div>
+            <div class="error_message" id="category_advertising_the_advertiser_product_service_text_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                
+        <div class="inner_box" >
+            <div class="html_title">Website</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="30" name="category_advertising_the_advertiser_website_text" id="category_advertising_the_advertiser_website_text" value="" class="textBox"  /></div>
+            <div class="error_message" id="category_advertising_the_advertiser_website_text_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                        <div>
+                        <div class="inner_container">
+            <div class="inner_box" style="width:50%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title">Is this a</div>
+                                                        <div class="element_spacing" style="float:left; width:230px; xborder:1px solid #000;"><input type="checkbox" name="category_advertising_the_advertiser_is_this_a_checkbox[]"  class="textBox" id="pitch_for_new_business" value="pitch_for_new_business" />&nbsp;&nbsp;Pitch for new business&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:230px; xborder:1px solid #000;"><input type="checkbox" name="category_advertising_the_advertiser_is_this_a_checkbox[]"  class="textBox" id="pitch_to_retain_business" value="pitch_to_retain_business" />&nbsp;&nbsp;Pitch to retain business&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:230px; xborder:1px solid #000;"><input type="checkbox" name="category_advertising_the_advertiser_is_this_a_checkbox[]"  class="textBox" id="live_ad_campaign" value="live_ad_campaign" />&nbsp;&nbsp;Live ad campaign&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="category_advertising_the_advertiser_is_this_a_checkbox_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                        </div><br style="clear:both" />
+                    
+        <div class="inner_box" >
+            <div class="html_title">Ad / Campaign Value</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="30" name="category_advertising_the_advertiser_ad_campaign_value_text" id="category_advertising_the_advertiser_ad_campaign_value_text" value="" class="textBox"  /></div>
+            <div class="error_message" id="category_advertising_the_advertiser_ad_campaign_value_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                
+        <div class="inner_box" >
+            <div class="html_title">Potential</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="30" name="category_advertising_the_advertiser_potential_text" id="category_advertising_the_advertiser_potential_text" value="" class="textBox"  /></div>
+            <div class="error_message" id="category_advertising_the_advertiser_potential_text_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                </div>
+        <div class="first_lvl_section" id="the_job_container">
+                        <div class="sub_title_container">
+                <input type="hidden" name="st_The_Job" value="" id="st_The_Job" />
+                <div class="sub_title">The Job</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                
+        <div class="inner_box" >
+            <div class="html_title">Project Name</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="30" name="the_job_project_name_text" id="the_job_project_name_text" value="" class="textBox"  /></div>
+            <div class="error_message" id="the_job_project_name_text_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:160px; xborder:1px solid #000;"><input type="radio" name="the_job_radio[]" onclick = "show_container('print_only')" class="textBox" id="print" value="print" />&nbsp;&nbsp;Print&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:160px; xborder:1px solid #000;"><input type="radio" name="the_job_radio[]" onclick = "show_container('digital_only')" class="textBox" id="digital" value="digital" />&nbsp;&nbsp;Digital&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:160px; xborder:1px solid #000;"><input type="radio" name="the_job_radio[]" onclick = "show_container('print_and_digital')" class="textBox" id="print_digital" value="print_digital" />&nbsp;&nbsp;Print &amp; Digital&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="the_job_radio_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title">Addition To Recent Request?</div>
+                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="radio" name="addition_to_recent_request[]" onclick = "show_container('#existing_job_number_container')" class="textBox" id="existing_job_number_yes" value="existing_job_number_yes" />&nbsp;&nbsp;Yes&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="radio" name="addition_to_recent_request[]" onclick = "hide_container('#existing_job_number_container')" class="textBox" id="existing_job_number_no" value="existing_job_number_no" />&nbsp;&nbsp;No&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="addition_to_recent_request_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                    <div class="first_lvl_section" id="existing_job_number_container">
+                    
+        <div class="inner_box" >
+            <div class="html_title">Existing Job Number</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="20" name="existing_job_number" id="existing_job_number" value="" class="textBox"  /></div>
+            <div class="error_message" id="existing_job_number_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                    </div>
+                    <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title">Is this a live job?</div>
+                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="radio" name="the_job_is_live_job[]" onclick = "show_container('#proof_date_container')" class="textBox" id="yes" value="yes" />&nbsp;&nbsp;Yes&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="radio" name="the_job_is_live_job[]" onclick = "hide_show_container('#proof_date_container')" class="textBox" id="no" value="no" />&nbsp;&nbsp;No&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="the_job_is_live_job_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                    <div class="first_lvl_section" id="proof_date_container">
+                    
+        <div class="inner_box" >
+            <div class="html_title">Proof Date</div>
+            <div class="element_spacing, grey_bg"><input readonly type="text" size="20" name="proof_date" id="proof_date" value="" class="textBox"  /></div>
+            <div class="error_message" id="proof_date_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                    </div>
+                    
+        <div class="inner_box" >
+            <div class="html_title">Due Date</div>
+            <div class="element_spacing, grey_bg"><input readonly type="text" size="20" name="due_date" id="due_date" value="" class="textBox"  /></div>
+            <div class="error_message" id="due_date_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                </div>
+        <div class="print_elements" id="the_job_print_container">            
+                    <div class="sub_title_container">
+                <input type="hidden" name="st_Print" value="" id="st_Print" />
+                <div class="sub_title">Print</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                <div class="inner_container">
+            <div class="inner_box" style="width:50%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_print_radio[]" onclick = "hide_show_container('#the_job_print_ad_sizes_container', '#the_job_print_ad_sizes_radio')" class="textBox" id="the_job_print_ad_sizes_radio" value="the_job_print_ad_sizes_radio" />&nbsp;&nbsp;Press Advertising&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_print_radio[]" onclick = "hide_show_container('#the_job_print_flyer_container',    '#the_job_print_flyer_radio')" class="textBox" id="the_job_print_flyer_radio" value="the_job_print_flyer_radio" />&nbsp;&nbsp;Flyer&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_print_radio[]" onclick = "hide_show_container('#the_job_print_pos_container',      '#the_job_print_pos_radio')" class="textBox" id="the_job_print_pos_radio" value="the_job_print_pos_radio" />&nbsp;&nbsp;POS&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_print_radio[]"  class="textBox" id="the_job_print_presentation_radio" value="the_job_print_presentation_radio" />&nbsp;&nbsp;Presentation&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_print_radio[]"  class="textBox" id="the_job_print_project_radio" value="the_job_print_project_radio" />&nbsp;&nbsp;Project&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_print_radio[]"  class="textBox" id="the_job_print_ad_note_radio" value="the_job_print_ad_note_radio" />&nbsp;&nbsp;Ad Note&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_print_radio[]"  class="textBox" id="the_job_print_creative_shape_radio" value="the_job_print_creative_shape_radio" />&nbsp;&nbsp;Creative Shape&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_print_radio[]"  class="textBox" id="the_job_print_wrap_radio" value="the_job_print_wrap_radio" />&nbsp;&nbsp;Wrap&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_print_radio[]"  class="textBox" id="the_job_print_invitation_radio" value="the_job_print_invitation_radio" />&nbsp;&nbsp;Invitation&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_print_radio[]" onclick = "hide_show_container('#the_job_print_other_textarea_container','#the_job_print_other_radio')" class="textBox" id="the_job_print_other_radio" value="the_job_print_other_radio" />&nbsp;&nbsp;Other&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="the_job_print_radio_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+               
+        <br style="clear:both;" />
+        <div class="print_elements" id="the_job_print_other_textarea_container">
+           
+        <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Other</div>
+                <div class="element_spacing">
+                    <span><textarea name="the_job_print_other_textarea" id="the_job_print_other_textarea" rows="4" cols="50" class="textBox"></textarea></span>
+                </div>
+            </div>
+        </div><br style="clear: both" />
+                </div>
+        <br style="clear:both" />
+           
+        <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Publication</div>
+                <div class="element_spacing">
+                    <span><textarea name="the_job_print_publication_textarea" id="the_job_print_publication_textarea" rows="4" cols="50" class="textBox"></textarea></span>
+                </div>
+            </div>
+        </div><br style="clear: both" />
+                <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title">Bleed</div>
+                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="radio" name="the_job_print_bleed_radio[]"  class="textBox" id="yes" value="yes" />&nbsp;&nbsp;Yes&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="radio" name="the_job_print_bleed_radio[]"  class="textBox" id="no" value="no" />&nbsp;&nbsp;No&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="the_job_print_bleed_radio_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                </div><br style="clear:both" />
+        <div class="print_elements" id="the_job_print_ad_sizes_container">
+                    <div class="sub_title_container">
+                <input type="hidden" name="st_Ad_Sizes" value="" id="st_Ad_Sizes" />
+                <div class="sub_title">Ad Sizes</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M2x2" value="M2x2" />&nbsp;&nbsp;M2x2&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M3x2" value="M3x2" />&nbsp;&nbsp;M3x2&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M4x2" value="M4x2" />&nbsp;&nbsp;M4x2&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M5x2" value="M5x2" />&nbsp;&nbsp;M5x2&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M6x2" value="M6x2" />&nbsp;&nbsp;M6x2&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M12x2" value="M12x2" />&nbsp;&nbsp;M12x2&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M3x3" value="M3x3" />&nbsp;&nbsp;M3x3&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M4x3" value="M4x3" />&nbsp;&nbsp;M4x3&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M5x3" value="M5x3" />&nbsp;&nbsp;M5x3&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M6x3" value="M6x3" />&nbsp;&nbsp;M6x3&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M12x3" value="M12x3" />&nbsp;&nbsp;M12x3&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M3x4" value="M3x4" />&nbsp;&nbsp;M3x4&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M9x4" value="M9x4" />&nbsp;&nbsp;M9x4&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M12x4" value="M12x4" />&nbsp;&nbsp;M12x4&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M2x6" value="M2x6" />&nbsp;&nbsp;M2x6&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M3x6" value="M3x6" />&nbsp;&nbsp;M3x6&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M4x6" value="M4x6" />&nbsp;&nbsp;M4x6&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M6x6" value="M6x6" />&nbsp;&nbsp;M6x6&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M12x6" value="M12x6" />&nbsp;&nbsp;M12x6&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M3x12" value="M3x12" />&nbsp;&nbsp;M3x12&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M6x12" value="M6x12" />&nbsp;&nbsp;M6x12&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:100px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_ad_sizes_checkbox[]"  class="textBox" id="M12x12" value="M12x12" />&nbsp;&nbsp;M12x12&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="the_job_print_ad_sizes_checkbox_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                </div>
+        <div class="print_elements" id="the_job_print_flyer_container">
+                    <div class="sub_title_container">
+                <input type="hidden" name="st_Flyer" value="" id="st_Flyer" />
+                <div class="sub_title">Flyer</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                
+        <div class="inner_box" >
+            <div class="html_title">Flyer Width</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="20" name="the_job_print_flyer_width_text" id="the_job_print_flyer_width_text" value="" class="textBox"  /></div>
+            <div class="error_message" id="the_job_print_flyer_width_text_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                
+        <div class="inner_box" >
+            <div class="html_title">Flyer Depth</div>
+            <div class="element_spacing, grey_bg"><input  type="text" size="20" name="the_job_print_flyer_depth_text" id="the_job_print_flyer_depth_text" value="" class="textBox"  /></div>
+            <div class="error_message" id="the_job_print_flyer_depth_text_error_msg" style="clear:both;display: none;"></div>
+                         <div xstyle="padding-top:5px;"></div>
+                    </div>
+        
+                </div>
+        <div class="print_elements" id="the_job_print_pos_container">
+                    <div class="sub_title_container">
+                <input type="hidden" name="st_POS" value="" id="st_POS" />
+                <div class="sub_title">POS</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                <div class="inner_container">
+            <div class="inner_box" style="width:50%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:180px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_pos_checkbox[]"  class="textBox" id="wobbler" value="wobbler" />&nbsp;&nbsp;Wobbler&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:180px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_pos_checkbox[]"  class="textBox" id="standee" value="standee" />&nbsp;&nbsp;Standee&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:180px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_pos_checkbox[]"  class="textBox" id="poster" value="poster" />&nbsp;&nbsp;Poster&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:180px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_pos_checkbox[]"  class="textBox" id="lifts" value="lifts" />&nbsp;&nbsp;Lifts&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:180px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_pos_checkbox[]"  class="textBox" id="lightboxes" value="lightboxes" />&nbsp;&nbsp;Lightboxes&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:180px; xborder:1px solid #000;"><input type="checkbox" name="the_job_print_pos_checkbox[]"  class="textBox" id="other" value="other" />&nbsp;&nbsp;Other&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="the_job_print_pos_checkbox_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                </div>
+        <div class="print_elements" id="the_job_print_project_container">
+                </div>
+        <div class="digital_elements">
+                        <div class="sub_title_container">
+                <input type="hidden" name="st_Digital" value="" id="st_Digital" />
+                <div class="sub_title">Digital</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_digital_mobile_desktop_radio[]" onclick = "show_container('#the_job_digital_mobile_checkbox_container','#mobile')" class="textBox" id="mobile" value="mobile" />&nbsp;&nbsp;Mobile&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_digital_mobile_desktop_radio[]" onclick = "show_container('#the_job_digital_desktop_checkbox_container','#desktop')" class="textBox" id="desktop" value="desktop" />&nbsp;&nbsp;Desktop&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="the_job_digital_mobile_desktop_radio[]" onclick = "show_container('#the_job_digital_desktop_and_mobile_checkbox_container', '#mobile_desktop')" class="textBox" id="mobile_desktop" value="mobile_desktop" />&nbsp;&nbsp;Mobile &amp; Desktop&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="the_job_digital_mobile_desktop_radio_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                    <div class="digital_element_category_container" id="the_job_digital_mobile_checkbox_container">
+                    <div class="inner_container">
+            <div class="inner_box" style="width:30%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#mob_leaderboard')" class="textBox" id="mob_leaderboard" value="mob_leaderboard" />&nbsp;&nbsp;Leaderboard&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#mob_mrec')" class="textBox" id="mob_mrec" value="mob_mrec" />&nbsp;&nbsp;MREC&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#mob_spot_expander')" class="textBox" id="mob_spot_expander" value="mob_spot_expander" />&nbsp;&nbsp;Spot Expander&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#mob_cube')" class="textBox" id="mob_cube" value="mob_cube" />&nbsp;&nbsp;Cube&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#mob_otp')" class="textBox" id="mob_otp" value="mob_otp" />&nbsp;&nbsp;OTP&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_mobile_checkbox[]" onclick = "show_container('#the_job_digital_other_textarea_container',          '#mob_other')" class="textBox" id="mob_other" value="mob_other" />&nbsp;&nbsp;Other&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="the_job_digital_mobile_checkbox_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                    </div> 
+            <div class="digital_element_category_container" id="the_job_digital_desktop_checkbox_container">
+                    <div class="inner_container">
+            <div class="inner_box" style="width:60%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]"  class="textBox" id="dsk_EDM" value="dsk_EDM" />&nbsp;&nbsp;EDM&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#dsk_leaderboard')" class="textBox" id="dsk_leaderboard" value="dsk_leaderboard" />&nbsp;&nbsp;Leaderboard&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#dsk_mrec')" class="textBox" id="dsk_mrec" value="dsk_mrec" />&nbsp;&nbsp;MREC&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]"  class="textBox" id="dsk_half_page" value="dsk_half_page" />&nbsp;&nbsp;Half Page&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]"  class="textBox" id="dsk_roadblock" value="dsk_roadblock" />&nbsp;&nbsp;Roadblock&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]"  class="textBox" id="dsk_side_skins" value="dsk_side_skins" />&nbsp;&nbsp;Side Skins&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]"  class="textBox" id="dsk_super_skins" value="dsk_super_skins" />&nbsp;&nbsp;Super Skins&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#dsk_cube')" class="textBox" id="dsk_cube" value="dsk_cube" />&nbsp;&nbsp;Cube&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]"  class="textBox" id="dsk_lumberjack" value="dsk_lumberjack" />&nbsp;&nbsp;Lumberjack&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]"  class="textBox" id="dsk_half_page_rmx" value="dsk_half_page_rmx" />&nbsp;&nbsp;Half Page RMX&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#dsk_standard_otp')" class="textBox" id="dsk_standard_otp" value="dsk_standard_otp" />&nbsp;&nbsp;Standard OTP&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#dsk_full_page_otp')" class="textBox" id="dsk_full_page_otp" value="dsk_full_page_otp" />&nbsp;&nbsp;Full Page OTP&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#dsk_spot_expander')" class="textBox" id="dsk_spot_expander" value="dsk_spot_expander" />&nbsp;&nbsp;Spot Expander&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]"  class="textBox" id="dsk_page_flip" value="dsk_page_flip" />&nbsp;&nbsp;Page Flip&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]"  class="textBox" id="dsk_static_banner" value="dsk_static_banner" />&nbsp;&nbsp;Static Banner&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_checkbox[]" onclick = "show_container('#the_job_digital_other_textarea_container','#dsk_other')" class="textBox" id="dsk_other" value="dsk_other" />&nbsp;&nbsp;Other&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="the_job_digital_desktop_checkbox_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                    </div> 
+            <div class="digital_element_category_container" id="the_job_digital_desktop_and_mobile_checkbox_container">
+                    <div class="inner_container">
+            <div class="inner_box" style="width:60%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_EDM" value="all_EDM" />&nbsp;&nbsp;EDM&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#all_leaderboard')" class="textBox" id="all_leaderboard" value="all_leaderboard" />&nbsp;&nbsp;Leaderboard&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#all_mrec')" class="textBox" id="all_mrec" value="all_mrec" />&nbsp;&nbsp;MREC&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_half_page" value="all_half_page" />&nbsp;&nbsp;Half Page&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_roadblock" value="all_roadblock" />&nbsp;&nbsp;Roadblock&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_side_skins" value="all_side_skins" />&nbsp;&nbsp;Side Skins&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_super_skins" value="all_super_skins" />&nbsp;&nbsp;Super Skins&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_cube" value="all_cube" />&nbsp;&nbsp;Cube&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_lumberjack" value="all_lumberjack" />&nbsp;&nbsp;Lumberjack&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_half_page_rmx" value="all_half_page_rmx" />&nbsp;&nbsp;Half Page RMX&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#all_standard_otp')" class="textBox" id="all_standard_otp" value="all_standard_otp" />&nbsp;&nbsp;Standard OTP&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_full_page_otp" value="all_full_page_otp" />&nbsp;&nbsp;Full Page OTP&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_otp" value="all_otp" />&nbsp;&nbsp;OTP&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#all_spot_expander')" class="textBox" id="all_spot_expander" value="all_spot_expander" />&nbsp;&nbsp;Spot Expander&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_video" value="all_video" />&nbsp;&nbsp;Video&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_page_flip" value="all_page_flip" />&nbsp;&nbsp;Page Flip&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_static_banner" value="all_static_banner" />&nbsp;&nbsp;Static Banner&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]" onclick = "show_container('#the_job_digital_other_textarea_container','#dsk_other')" class="textBox" id="all_other" value="all_other" />&nbsp;&nbsp;Other&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="the_job_digital_desktop_and_mobile_checkbox_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                    </div>
+            <div class="digital_element_category_container" id="the_job_digital_desktop_and_mobile_checkbox_container">
+                    <div class="inner_container">
+            <div class="inner_box" style="width:60%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title"></div>
+                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_EDM" value="all_EDM" />&nbsp;&nbsp;EDM&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#all_leaderboard')" class="textBox" id="all_leaderboard" value="all_leaderboard" />&nbsp;&nbsp;Leaderboard&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#all_mrec')" class="textBox" id="all_mrec" value="all_mrec" />&nbsp;&nbsp;MREC&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_half_page" value="all_half_page" />&nbsp;&nbsp;Half Page&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_roadblock" value="all_roadblock" />&nbsp;&nbsp;Roadblock&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_side_skins" value="all_side_skins" />&nbsp;&nbsp;Side Skins&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_super_skins" value="all_super_skins" />&nbsp;&nbsp;Super Skins&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_cube" value="all_cube" />&nbsp;&nbsp;Cube&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_lumberjack" value="all_lumberjack" />&nbsp;&nbsp;Lumberjack&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_half_page_rmx" value="all_half_page_rmx" />&nbsp;&nbsp;Half Page RMX&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#all_standard_otp')" class="textBox" id="all_standard_otp" value="all_standard_otp" />&nbsp;&nbsp;Standard OTP&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_full_page_otp" value="all_full_page_otp" />&nbsp;&nbsp;Full Page OTP&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_otp" value="all_otp" />&nbsp;&nbsp;OTP&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]" onclick = "show_container('#the_job_digital_campaign_booking_details_container','#all_spot_expander')" class="textBox" id="all_spot_expander" value="all_spot_expander" />&nbsp;&nbsp;Spot Expander&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_video" value="all_video" />&nbsp;&nbsp;Video&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_page_flip" value="all_page_flip" />&nbsp;&nbsp;Page Flip&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]"  class="textBox" id="all_static_banner" value="all_static_banner" />&nbsp;&nbsp;Static Banner&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="checkbox" name="the_job_digital_desktop_and_mobile_checkbox[]" onclick = "show_container('#the_job_digital_other_textarea_container','#dsk_other')" class="textBox" id="all_other" value="all_other" />&nbsp;&nbsp;Other&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="the_job_digital_desktop_and_mobile_checkbox_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                    </div><br style="clear:both" />
+            <div class="digital_element_category_container" id="the_job_digital_other_textarea_container">
+               
+        <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">Other</div>
+                <div class="element_spacing">
+                    <span><textarea name="the_job_digital_other_textarea" id="the_job_digital_other_textarea" rows="4" cols="50" class="textBox"></textarea></span>
+                </div>
+            </div>
+        </div><br style="clear: both" />
+                    </div>           
+            <div class="digital_element_category" id="the_job_digital_campaign_booking_details_container">
+                <div><b>Campaign Booking Details</b></div>
+                <div>Please note: Live digital bookings require a PDF copy of the IO booking before building will commence</div>
+            </div>
+                    </div>
+        <div class="first_lvl_section" id="creative_details_container">                
+                    <div class="sub_title_container">
+                <input type="hidden" name="st_Creative_Details" value="" id="st_Creative_Details" />
+                <div class="sub_title">Creative Details</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                </div>
+        <div class="first_lvl_section">                
+            <div id="type_of_request_container">
+                    <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <!--<div style="padding:3px 0px 10px 0px;">-->
+                    <div class="html_title">Type of Request</div>
+                                                        <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_request[]"  class="textBox" id="single_advertisement" value="single_advertisement" />&nbsp;&nbsp;Single Advertisement&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_request[]"  class="textBox" id="campaign" value="campaign" />&nbsp;&nbsp;Campaign&nbsp;&nbsp;&nbsp;</div>
+                                                            <div class="element_spacing" style="float:left; width:200px; xborder:1px solid #000;"><input type="radio" name="type_of_request[]"  class="textBox" id="feature" value="feature" />&nbsp;&nbsp;Feature&nbsp;&nbsp;&nbsp;</div>
+                                            <!--</div>-->
+                <div class="error_message" id="type_of_request_error_msg" style="clear:both; visibility: hidden"></div>
+            </div>  
+            
+        </div>
+                    </div>
+           
+        <div class="inner_container">
+            <div class="inner_box">
+                <div class="html_title">In basic terms what is required?</div>
+                <div class="element_spacing">
+                    <span><textarea name="whats_required" id="whats_required" rows="4" cols="50" class="textBox"></textarea></span>
+                </div>
+            </div>
+        </div><br style="clear: both" />
+                </div>
+        <div class="first_lvl_section" id="file_upload_container">                
+                    <div class="sub_title_container">
+                <input type="hidden" name="st_File_Upload" value="" id="st_File_Upload" />
+                <div class="sub_title">File Upload</div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+           
+        <div class="inner_container">
+            <div class="inner_box" style="width:100%;">
+                <div class="html_title">Attachments (less than 5MB)</div>
+                <div class="element_spacing">
+                    <span><input type="file" name="file_upload" id="file_upload" class="textBox" /></span>
+                    <div class="error_message" id="file_upload_error_msg" style="display:none;color:red;">File size is larger that 5MB, please use transfer drive</div>
+                </div>
+            </div>
+        </div><br style="clear: both" />
+                </div>
+        <div class="first_lvl_section" id="network Location">                
+            <div style="clear:both;width:400px;">Please zip all files together named with the job number and client name / project name and upload to the relevant drive</div>
+        </div>
+        <div class="first_lvl_section" id="brief_submission_container">
+            <p class='footer_text'><b>QLD</b></p><br style="clear:both" />
+            <p>T:Drive ('QNPtransfer01')</p>
+
+            <p class='footer_text'><b>NSW</b></p><br style="clear:both" />
+            <p>\\nwnshsfs02a\Transfer\To_Creative</p>
+
+            <p class='footer_text'><b>VIC</b></p><br style="clear:both" />
+            <p>\\ldrhpfs4\All Users\NEWS AUSTRALIA VIC SHARE\Premedia Creative.</p>
+            <p class='footer_text'><b>SA</b></p><br style="clear:both" />
+            <p>\\advadlgraphic\Graphics Transfers\PreMedia Transfer</p>
+            <p class='footer_text'><br />Note: Access to the the relevant drives is gained via IT</p>
+        </div>
+        <div class="first_lvl_section" id="submit_button_container">     
+        <input type="hidden" name="is_live_job_selected" id="is_live_job_selected" value="0" />
+                    <div class="sub_title_container">
+                <input type="hidden" name="st_" value="" id="st_" />
+                <div class="sub_title"></div>
+                <div class="hr_spacing">
+                    <hr />
+                </div>
+            </div>
+
+                <div class="row">
+            <div class="buttonContainer">
+                <span class="buttonSpacing"><input type="submit" value="Create Booking" class="button" /></span>
+            </div>
+        </div>
+        <div style="padding:0px 0px 20px 0px;"></div>
+	                
+        </div>
+	<script type="text/javascript">
+
+            $(document).ready(function() {
+                
+                hide_all();
+                $('#due_date').bind("cut copy paste",function(e) {
+                    e.preventDefault();
+                });
+                
+                $('#proof_date').bind("cut copy paste",function(e) {
+                    e.preventDefault();
+                });
+                
+                //binds to onchange event of your input field
+                $('#file_upload').bind('change', function() {
+                    
+                    if(this.files[0].size > 15098019) {
+                        $('#file_upload_error_msg').show();
+                        $('#file_upload').val('');
+                    } else {
+                        $('#file_upload_error_msg').hide();
+                    }
+                });
+            });
+
+            //** date picker
+            $(function() {
+
+                    var pickerOpts = {
+                            dateFormat: "dd/mm/yy",
+                            minDate: 0
+
+                    }
+                    
+                    $('#due_date').datepicker(pickerOpts);
+                    $('#proof_date').datepicker(pickerOpts);
+                    //$('#publication_date').datepicker(pickerOpts);
+
+            });
+            
+            /** this function is used for form validation, it can be passed 1 or 2 arguements
+             * @arg[0] the element that is checked
+             * @arg[1] the element id 
+            **/
+            function chkbox_rad_required() {
+                var checked = false;
+                for(var i = 0; i < arguments.length; i++ ) {
+                   
+                    if($(arguments[0]).is(":checked")) {
+                        checked = true;
+                    } else {
+                        checked = false;
+                        break
+                    }
+                }
+                return checked;
+            }
+            
+            $(document).ready(function() {
+                
+                $('#st_Your_Details').val('1');
+                $('#st_Category').val('1');
+                
+                $('#default').validate({ // initialize the plugin
+					
+                    rules: {
+
+                        first_name: {
+                                required: true,
+                                email: false
+                        },
+                        last_name: {
+                                required: true,
+                                minlength: 2
+                        },
+                        phone: {
+                                required: true,
+                                number: true
+                        },
+                        email: {
+                                required: true,
+                                email: true
+                        },
+                        state: {
+                                required: true
+                        },
+                        due_date: {
+                                required: true
+                        },
+                        'category_radio[]': {
+                                required: true
+                        },                        
+                        category_advertising_the_advertiser_advertiser_name_text: {
+                                required: true
+                        },
+                        category_advertising_the_advertiser_product_service_text: {
+                                required: true
+                        },
+                        category_advertising_the_advertiser_website_text: {
+                                required: true
+                        },
+                        category_advertising_the_advertiser_ad_campaign_value_text: {
+                                required: true
+                        },
+                        /*category_advertising_the_advertiser_potential_text: {
+                                required: true
+                        },*/
+                        'category_advertising_the_advertiser_is_this_a_checkbox[]': {
+                                required: true
+                        },                        
+                        the_job_project_name_text : {
+                                required: true
+                            },
+                        the_job_print_publication_textarea : {
+                                required: true
+                            },                           
+                        'the_job_radio[]': {
+                                required: true
+                            },
+                        'is_live_job[]': {
+                                required: true
+                            },
+                        'existing_job_number': {
+                            required: function() {
+                                chkbox_rad_required('#existing_job_number_yes','#addition_to_recent_request');
+                            }    
+                        },                            
+                        'proof_date': {
+                            required: function() {
+                                chkbox_rad_required('#yes','#the_job_is_live_job');
+                            } 
+                        },                            
+                        'the_job_print_radio[]': {
+                            required: function() {
+                                chkbox_rad_required('#print','#print_and_digital');
+                            }    
+                        },
+                        'the_job_print_ad_sizes_checkbox[]' : {
+                            required: function() {
+                                chkbox_rad_required('#the_job_print_ad_sizes_checkbox');
+                            }
+                        },
+                        'the_job_print_flyer_width_text' : {
+                            required: function() {
+                                chkbox_rad_required('#the_job_print_flyer_checkbox');
+                            }
+                        },
+                        'the_job_print_flyer_depth_text' : {
+                            required: function() {
+                                chkbox_rad_required('#the_job_print_flyer_checkbox');
+                            }
+                        },
+                        'the_job_print_pos_checkbox[]' : {
+                            required: function() {
+                                chkbox_rad_required('#the_job_print_pos_checkbox');
+                            }
+                        },
+                        'the_job_digital_mobile_desktop_radio[]' : {
+                            required: function() {                                
+                                chkbox_rad_required('#digital','#the_job_digital_mobile_desktop_radio');
+                            } 
+                        },                        
+                        'the_job_digital_mobile_checkbox[]' : {
+                            required: function() {                                
+                                chkbox_rad_required('#the_job_digital_mobile_checkbox');
+                            } 
+                        },
+                        'the_job_digital_desktop_checkbox[]' : {
+                            required: function() {
+                                chkbox_rad_required('#the_job_digital_desktop_checkbox');
+                            } 
+                        },   
+                        'the_job_digital_desktop_and_mobile_checkbox[]' : {
+                            required: function() {
+                                chkbox_rad_required('#the_job_digital_desktop_and_mobile_checkbox');
+                            } 
+                        },                      
+                        'the_job_digital_campaign_booking_details_textarea' : {
+                            required: function() {
+                                chkbox_rad_required('#leaderboard','#half_page','#roadblock','#cube','#side_skins','#mobile',"#lumberjacks",'#mrec','#spot_expander');
+                            }
+                        },
+                        'type_of_request[]' : {
+                            required: true
+                        }                        
+                    },
+                    errorPlacement: function( label, element ) {
+                        
+                        switch(element.attr( "name" )) {                               
+                            case 'the_job_radio[]' : 
+                                $("#the_job_radio_error_msg").css('visibility','visible');
+                                $("#the_job_radio_error_msg").append( label );
+                                break;
+                            case 'category_radio[]' : 
+                                $("#category_radio_error_msg").css('visibility','visible');
+                                $("#category_radio_error_msg").append( label );
+                                break;                                
+                            case 'is_live_job[]' : 
+                                $("#is_live_job_error_msg").css('visibility','visible');
+                                $("#is_live_job_error_msg").append( label );
+                                break;    
+                            case 'the_job_print_radio[]' :
+                                $("#the_job_print_radio_error_msg").css('visibility','visible');
+                                $("#the_job_print_radio_error_msg").append( label );
+                                break; 
+                            case 'the_job_print_ad_sizes_checkbox[]' :
+                                $("#the_job_print_ad_sizes_checkbox_error_msg").css('visibility','visible');
+                                $("#the_job_print_ad_sizes_checkbox_error_msg").append( label );                                
+                                break;
+                             case 'the_job_print_pos_checkbox[]' :
+                                $("#the_job_print_pos_checkbox_error_msg").css('visibility','visible');
+                                $("#the_job_print_pos_checkbox_error_msg").append( label );                                
+                                break;   
+                            case 'the_job_digital_mobile_desktop_radio[]' :
+                                $("#the_job_digital_mobile_desktop_radio_error_msg").css('visibility','visible');
+                                $("#the_job_digital_mobile_desktop_radio_error_msg").append( label );
+                                break;
+                            case 'the_job_digital_mobile_checkbox[]' :
+                                $("#the_job_digital_mobile_checkbox_error_msg").css('visibility','visible');
+                                $("#the_job_digital_mobile_checkbox_error_msg").append( label );
+                                break;                                
+                             case 'the_job_digital_desktop_checkbox[]' :
+                                $("#the_job_digital_desktop_checkbox_error_msg").css('visibility','visible');
+                                $("#the_job_digital_desktop_checkbox_error_msg").append( label );
+                                break;                                
+                             case 'the_job_digital_desktop_and_mobile_checkbox[]' :
+                                $("#the_job_digital_desktop_and_mobile_checkbox_error_msg").css('visibility','visible');
+                                $("#the_job_digital_desktop_and_mobile_checkbox_error_msg").append( label );
+                                break; 
+                             case 'type_of_request[]' :
+                                $("#type_of_request_error_msg").css('visibility','visible');
+                                $("#type_of_request_error_msg").append( label );
+                                break;                                  
+                            default :
+                                label.insertAfter( element );
+                        }
+                    },
+                });
+                
+                                
+            });
+	    
+            jQuery.extend(jQuery.validator.messages, {
+                    required: "<div style='color:red'>  This field is required.</div>",
+                    remote: "Please fix this field.",
+                    email: "<div style='color:red'>Please enter a valid email address.</div>",
+                    phone: "<div style='color:red'>Please enter a valid phone number, include area code</div>",
+                    last_name: "<div style='color:red'>Please enter at least 2 characters</div>"
+                    /*url: "Please enter a valid URL.",
+                    date: "Please enter a valid date.",
+                    dateISO: "Please enter a valid date (ISO).",
+                    number: "Please enter a valid number.",
+                    digits: "Please enter only digits.",
+                    creditcard: "Please enter a valid credit card number.",
+                    equalTo: "Please enter the same value again.",
+                    accept: "Please enter a value with a valid extension.",
+                    maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
+                    minlength: jQuery.validator.format("Please enter at least {0} characters."),
+                    rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
+                    range: jQuery.validator.format("Please enter a value between {0} and {1}."),
+                    max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
+                    min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")*/
+            });
+            
+            /*
+             * 
+                $('.marketing_department').hide();
+                $('.advertising_department').hide();
+                $('.digital_elements').hide();
+                $("#the_job_print_container").hide();
+                $("#the_job_print_ad_sizes_container").hide();
+                $("#the_job_print_flyer_container").hide();
+                $("#the_job_print_pos_container").hide();
+                $("#the_job_digital_container").hide();
+             */
+            
+            	//** date picker
+	$(function() {
+
+		var pickerOpts = {
+                    dateFormat: "dd/mm/yy"
+		}
+
+		$('#press_date').datepicker(pickerOpts);
+		$('#pub_date').datepicker(pickerOpts);
+
+	});
+            
+	</script>
+	<div style="padding:0px 0px 20px 0px;"></div>
+</form>
+
+	
+	</div><!-- end mainPageWidthAndHeight -->
+  </div><!-- end mainBodyContainer -->
+</body>
+</html>
