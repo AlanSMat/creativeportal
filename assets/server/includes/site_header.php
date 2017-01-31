@@ -4,6 +4,8 @@ include CLASSES_PATH . '/class.FormElements.php';
 
 $form_name = 'default';
 $form_elements = new FormElements($form_name);
+//** check to see if it's a specific version of Internet Explorer used on News Ltd Windows 7 machines
+strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 11.0') != '' ? $user_agent = 'IE' : $user_agent = 'Chrome';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -50,6 +52,14 @@ $form_elements = new FormElements($form_name);
 	    </div>
   	    <div class="contentContainer">
     <?php 
+    }
+    if($user_agent == 'IE') {
+        ?>
+        <div style="margin: 200px 0px 200px 0px;text-align: center; font-weight: bold; font-size: 18px">
+            You are using Internet Explorer to access this form, please use Google Chrome
+        </div>
+        <?php
+        exit;
     }
     ?>
 	  
