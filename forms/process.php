@@ -19,10 +19,29 @@ function convert_smart_quotes($string) {
                     chr(147), 
                     chr(148), 
                     chr(150),
-                    chr(151)
+                    chr(151),
+                    chr(169)
                     ); 
 
-    return str_replace($search, '', $string); 
+    $replace = array('',
+                     '',
+                     '',
+                     '', 
+                     '',
+                     '',
+                     '',
+                     '',
+                     '',
+                     '', 
+                     '', 
+                     '', 
+                     '', 
+                     '',
+                     '',
+                     '&copy;'
+                    );     
+    
+        return str_replace($search, $replace, $string); 
     
 } 
 
