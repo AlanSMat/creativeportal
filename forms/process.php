@@ -2,6 +2,51 @@
 session_start();
 include("../globals.php");
 
+//** looks for the asscii code of special characters and set's them to nothing
+function convert_smart_quotes($string) { 
+    
+    $search = array(chr(34),
+                    chr(95),
+                    chr(96),
+                    chr(123), 
+                    chr(125),
+                    chr(126),
+                    chr(128),
+                    chr(136),
+                    chr(140),
+                    chr(145), 
+                    chr(146), 
+                    chr(147), 
+                    chr(148), 
+                    chr(150),
+                    chr(151)
+                    ); 
+
+    return str_replace($search, '', $string); 
+    
+} 
+
+$chk_for_special_chars = array();
+
+//** checks to see if the post variable exists from the string passed
+function is_isset($post_string) {
+    if(isset($_POST[$post_string])) {
+        return $post_string;
+    } else {
+        return '';
+    }
+}
+
+$chk_for_special_chars[0] = is_isset('category_marketing_textarea');
+$chk_for_special_chars[1] = is_isset('category_advertising_textarea');
+$chk_for_special_chars[2] = is_isset('the_job_print_publication_textarea');
+$chk_for_special_chars[3] = is_isset('the_job_project_name_text');
+$chk_for_special_chars[4] = is_isset('whats_required');
+
+for($i = 0; $i < count($chk_for_special_chars); $i++) {
+    $_POST[$chk_for_special_chars[$i]] = convert_smart_quotes($_POST[$chk_for_special_chars[$i]]);
+}
+
 switch ($_POST['form_name']) {
 
     case 'default' :
