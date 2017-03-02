@@ -2,9 +2,7 @@
 require("../../globals.php");
 
 include(INCLUDES_PATH . "/site_header.php");
-
 ?>
-<!--<a href="<?php echo FORMS_URL  ?>/digital/index.php">JSON Files</a>-->
 <form id="<?php echo $form_name ?>" name="<?php echo $form_name ?>" action="<?php echo ROOT_URL ?>/forms/process.php" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="form_name" id="form_name" value="<?php echo $form_name ?>" />
         <style type="text/css">
