@@ -45,7 +45,7 @@ function convert_smart_quotes($string) {
     
 } 
 
-$chk_for_special_chars = array();
+//$chk_for_special_chars = array();
 
 //** checks to see if the post variable exists from the string passed
 function is_isset($post_string) {
