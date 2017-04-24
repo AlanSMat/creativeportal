@@ -762,15 +762,11 @@ class BookingsXmlForMediaSpectrum extends PostData {
         }
         return $parsed_array;
     }
-
+    
     private function _get_ms_run_date() {
         	
         if(isset($this->post_array['proof_date']) && $this->post_array['proof_date'] != '') {
             $run_date = trim($this->post_array['proof_date']);
-        } else if($this->post_array['due_date'] == '') {
-            $date = new DateTime('now');
-            $date->modify('+1 day');
-            $run_date = $date->format('d/m/Y');            
         } else {
             $run_date = trim($this->post_array['due_date']);
         }
@@ -788,7 +784,7 @@ class BookingsXmlForMediaSpectrum extends PostData {
             $date_array[2] = '20' . $date_array[2];
         }
         
-        $run_date = trim(str_pad($date_array[1],2,'0',STR_PAD_LEFT)) . trim(str_pad( $date_array[0],2,'0',STR_PAD_LEFT)) . trim($date_array[2]);
+        $run_date = str_pad($date_array[1],2,'0',STR_PAD_LEFT) . str_pad( $date_array[0],2,'0',STR_PAD_LEFT) . $date_array[2];
 
         return $run_date;
         
