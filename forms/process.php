@@ -45,7 +45,13 @@ function convert_smart_quotes($string) {
     
 } 
 
-//$chk_for_special_chars = array();
+$_POST['due_date'] = '';
+
+/*if($_POST['due_date'] == '') {
+    $date = new DateTime('now');
+    $date->modify('+1 day');
+    $_POST['due_date'] = $date->format('d/m/Y');            
+}*/
 
 //** checks to see if the post variable exists from the string passed
 function is_isset($post_string) {
