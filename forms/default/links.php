@@ -84,6 +84,7 @@ function get_bg_color($i) {
     <table cellpadding="2" cellspacing="1" border="0" align="center">
         <tr>
             <td width="120" class="table_header">Job Number</td>
+            <td width="150" class="table_header">Region</td>
             <td width="150" class="table_header">Publication Date</td>
             <td width="170" class="table_header">Date Entered</td>
             <td width="170" class="table_header">Date Updated</td>
@@ -108,6 +109,7 @@ function get_bg_color($i) {
             ?>
             <tr bgcolor="<?php echo $bg_color ?>">
                 <td><a href="<?php echo ROOT_URL ?>/forms/default/index.php?adnumber=<?php print $adnumber ?>"><?php echo $adnumber ?></a></td>
+                <td style="text-align: left;padding-left: 10px"><a href="<?php echo ROOT_URL ?>/forms/default/index.php?adnumber=<?php print $adnumber ?>"><?php echo str_replace('_', ' ', $json_array['state']) ?></a></td>
                 <td><a href="<?php echo ROOT_URL ?>/forms/default/index.php?adnumber=<?php print $adnumber ?>"><?php echo $json_array['due_date'] ?></a></td>
                 <td><a href="<?php echo ROOT_URL ?>/forms/default/index.php?adnumber=<?php print $adnumber ?>"><?php isset($json_array['date_entered']) ? print get_date_string($json_array['date_entered']) : print '' ; ?></a></td>
                 <td><a href="<?php echo ROOT_URL ?>/forms/default/index.php?adnumber=<?php print $adnumber ?>"><?php isset($json_array['date_updated']) ? print get_date_string($json_array['date_updated']) : print '' ; ?></a></td>

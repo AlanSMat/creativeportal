@@ -1101,7 +1101,7 @@ class CreativeHTMLBrief extends PostData {
                             
                             $html .= "<tr>";
                             $html .=     "<td bgcolor=\"" . $bg_color . "\"><b>" . $title .   "</b></td>";
-                            $html .=     "<td bgcolor=\"" . $bg_color . "\">" . nl2br($value) . "</td>";
+                            $html .=     "<td bgcolor=\"" . $bg_color . "\">" . nl2br(addslashes($value)) . "</td>";
                             $html .= "</tr>";
                         
                         }

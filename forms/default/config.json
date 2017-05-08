@@ -272,11 +272,12 @@
                 "css_class"   : "textBox",
                 "hide_show"   : "1",
                 "list_item"   : [{
-                                "acquisition" : "Acquisition",
-                                "rewards"     : "Rewards",
-                                "retention"   : "Retention",
-                                "retail"      : "Retail",
-                                "trade"       : "Trade"
+                                "acquisition"       : "Acquisition",
+                                "rewards"           : "Rewards",
+                                "retention"         : "Retention",
+                                "retail"            : "Retail",
+                                "trade"             : "Trade",
+								"content_marketing" : "Content Marketing"
                                 }],
                 "format_settings"  : [{
                                      "inner_box_width"       : "50%",
