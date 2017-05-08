@@ -29,7 +29,7 @@ class PostData {
         $this->default_pub                = 'Creative Campaign';
         $this->ad_specs                   = '';
         $this->output_directory           = FILES_OUT . "/files_out";
-        $this->json_encode                = json_encode($post_array);
+        $this->json_encode                = json_encode($post_array, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE);
         $this->create_json_file           = $this->create_data_file('.js');
         $this->todays_date                = date("d/m/y");
         

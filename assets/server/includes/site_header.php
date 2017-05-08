@@ -1,11 +1,15 @@
 <?php 
+/*
+ * 2017-02-01 - Browser detection code added to prevent the user accessing the form when using Internet Explorer.
+ * 
+ *  */
 $page_title = "MediaSpectrum form to XML";
 include CLASSES_PATH . '/class.FormElements.php';
 
 $form_name = 'default';
 $form_elements = new FormElements($form_name);
 //** check to see if it's a specific version of Internet Explorer used on News Ltd Windows 7 machines
-strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 11.0') != '' ? $user_agent = 'IE' : $user_agent = 'Chrome';
+strpos($_SERVER['HTTP_USER_AGENT'],'Chrome') == '' ? $user_agent = 'IE' : $user_agent = 'Chrome';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -47,16 +51,16 @@ strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 11.0') != '' ? $user_agent = 'IE' : $us
                 <div class="line"><!--  --></div>
                 <div class="links_container">
                     <div style="float:left;"></div>
-                    <div style="float:right;padding-right: 5px ;"><a href="<?php echo ROOT_URL ?>/forms/default/links.php?links=1">Admin Only</a></div>
+                    <div style="float:right;padding-right: 5px ;"><?php if($user_agent != 'IE') { ?><a href="<?php echo ROOT_URL ?>/forms/default/links.php?links=1">Admin Only</a><?php } ?></div>
                 </div>
 	    </div>
   	    <div class="contentContainer">
     <?php 
     }
-    if($user_agent == 'IE') {
+    if($user_agent != 'Chrome') {
         ?>
         <div style="margin: 200px 0px 200px 0px;text-align: center; font-weight: bold; font-size: 18px">
-            You are using Internet Explorer to access this form, please use Google Chrome
+            You are using an unsupported browser to access this form, please use Google Chrome
         </div>
         <?php
         exit;
