@@ -1,28 +1,36 @@
-form {
-    margin: 0px; 
-    padding: 0px;
+a {
+    text-decoration: none;
+    color:#00207B;
 }
 
-a 
-{
+a:hover {
     text-decoration: none;
-    color:#00207B;	
-}
-
-a:hover 
-{
-    text-decoration: none;
-    color:#666666;			
+    color:#666666;
 }
 
 body, td, p, input, select, textarea {
     font-family:verdana;
     font-size:14px;
-    margin:0px 0px 0px 0px;  
+    margin:0px 0px 0px 0px;
     xbackground-color: #ccc;
 }
-	
-p 
+
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+form input[type=text] {
+    padding: 5px 0px 4px 3px;
+}
+
+form input[type=select] {
+    padding: 5px 0px 4px 3px;
+}
+
+hr { border-color: #0082DA ; }
+
+p
 {
     float:left;
 }
@@ -32,9 +40,9 @@ textarea {
 }
 
 
-td 
+td
 {
-    text-align:left;	
+    text-align:left;
 }
 
 div {
@@ -46,51 +54,122 @@ div {
 .altBgRowColor {
     background-color:#E7EFF7;
     height:18px;
-    border-bottom: 1px solid white;	
+    border-bottom: 1px solid white;
+}
+
+.advertising_department {
+    width: 700px;
+    margin: auto;
 }
 
 .bgRowColor {
     background-color:#C6DBFF	;
     height:18px;
-    border-bottom: 1px solid white;	
+    border-bottom: 1px solid white;
 }
 
-.bannerbg 
+.bannerbg
 {
-    background-color:#4A7DD6;	
+    background-color:#4A7DD6;
 }
 
-.buttonContainer 
+.button {
+    border:1px solid #000;
+    font-size:14px;
+    cursor:pointer;
+    clear:both;
+    padding: 5px 0px 5px 0px;
+    width:180px;
+}
+
+.button:hover {
+    border:1px solid #000;
+    font-size:14px;
+    cursor:pointer;
+    clear:both;
+    background-color:#fff;
+    padding: 5px 0px 5px 0px;
+    width:180px;
+}
+
+.buttonContainer
 {
     padding: 5px 0px 0px 0px;
 }
 
-.buttonSpacing 
+.buttonSpacing
 {
-    padding:5px 5px 0px 0px;	
+    padding:5px 5px 0px 0px;
     text-align:left;
 }
 
-.contentContainer {    
-    text-align: left; 
+.contentContainer {
+    text-align: left;
     width: 100%;
     border: 0px solid #000;
 }
 
+.digital_elements {
+    width: 700px;
+    margin: auto;
+}
+
+.element_spacing {
+    padding:0px 0px 10px 0px;
+}
+
+.first_lvl_section {
+    width: 700px;
+    margin: auto;
+}
+
+.footer_text {
+    clear: both;
+    padding: 10px 0px 10px 0px
+}
+
 .footer {
     background-color:#B5B6B5;
-    color:#000;	
+    color:#000;
     xborder: 1px outset #333;
     font-weight:bold;
     text-align:right;
 }
 
-.form_title { 
-    border: 0px solid #000; 
+.form_title {
+    border: 0px solid #000;
     padding: 10px 0px 10px 10px;
     text-align: left;
     font-weight: bold;
     font-size: 16px;
+}
+
+.html_title {
+    padding:10px 0px 4px 0px;
+}
+
+.inner_container {
+    border:0px solid #000;
+    width:700px;
+    margin: auto;
+    background:rgba(255,255,255,0.5);
+}
+
+.inner_box {
+    padding:3px 0px 10px 0px;
+    display: inline-block;
+    border: 0px solid #000;
+    position: relative;
+    margin: 1%;
+    width:49%;
+    float:left;
+    margin:0;
+    background:#7f7f7f;
+    background:rgba(255,255,255,0.5);
+}
+
+.hr_spacing {
+    padding: 0px 0px 10px 0px;
 }
 
 .leftCol {
@@ -115,9 +194,14 @@ div {
     height:1px;
 }
 
-.mainBodyContainer 
+.marketing_department {
+    width:700px;
+    margin:auto;
+}
+
+.mainBodyContainer
 {
-    width:1280px;	
+    width:1280px;
     text-align:center;
     margin-left: auto;
     margin-right: auto;
@@ -125,12 +209,12 @@ div {
     xborder: solid 0px #293c6b;
 }
 
-.mainPageWidthAndHeight 
+.mainPageWidthAndHeight
 {
     width:1024px;
     xborder: solid 1px #293c6b;
     xheight: 700px;
-    padding:0px 0px 0px 0px;	
+    padding:0px 0px 0px 0px;
     background-color:#fff;
     margin:auto;
 }
@@ -139,21 +223,28 @@ div {
     color:#fff;
     padding:0px 0px 0px 6px;
     font-size:14px;
-    text-align:left;  
-}   
+    text-align:left;
+}
 
-.pageBackLink 
+.outer_container {
+    border:0px
+    solid #000;
+    width:700px;
+    margin: auto
+}
+
+.pageBackLink
 {
     font-weight:normal;
     float:right;
     padding-right:5px;
-    color:#ff0000;	
+    color:#ff0000;
 }
 
 .pageContainer {
     width: 1000px;
     border: 0px solid #ccc;
-    padding:80px 0px 0px 0px; 
+    padding:80px 0px 0px 0px;
     margin-left:auto;
     margin-right:auto;
 }
@@ -166,25 +257,25 @@ div {
     color: #4A7DD6;
 }
 
-.pageTitleContainer 
+.pageTitleContainer
 {
     clear:both;
-    padding:0px 0px 40px 0px;	
+    padding:0px 0px 40px 0px;
 }
 
-.pageTitle 
+.pageTitle
 {
     background-color:#ccc;
     float:left;
     width:100%;
     border-bottom:solid 1px #666;
-    font-weight:bold;	
-    padding:3px 0px 3px 0px;	
+    font-weight:bold;
+    padding:3px 0px 3px 0px;
 }
 
-.pageTitleSpacing 
+.pageTitleSpacing
 {
-    padding-left:5px;	
+    padding-left:5px;
     text-align:left;
     float:left;
 }
@@ -193,35 +284,56 @@ div {
     padding:0px 0px 0px 35px;
 }
 
-.printHeader 
+.printHeader
 {
-    display:none;	
+    display:none;
 }
 
-.rightCol {
-    float:left; 
-}
-
-.radioSpacing 
-{
-    padding:0px 0px 2px 0px;	
+.print_elements {
+    width: 700px;
+    margin: auto;
 }
 
 .rightCol {
     float:left;
-    display: inline; 
+}
+
+.radioSpacing
+{
+    padding:0px 0px 2px 0px;
+}
+
+.rightCol {
+    float:left;
+    display: inline;
     border: 0px solid #000;
 }
 
-.row { 
+.row {
     padding:3px 0px 3px 0px;
     clear:both;
 
 }
 
-.rowSpacer 
+.rowSpacer
 {
     padding:3px, 0px 3px 0px;
+}
+
+.section_title {
+    padding: 10px 0px 0px 0px;
+    font-size: 16px
+}
+
+.sub_title {
+    padding: 10px 0px 0px 0px;
+    font-size: 18px;
+}
+
+/* sub title spacing */
+.sub_title_container {
+    clear: both;
+    padding: 10px 0px 0px 0px
 }
 
 .subheader {
@@ -234,10 +346,10 @@ div {
     border: 1px solid #999;
     font-weight:normal;
     background-color:#fff;
-    text-align:right;	
+    text-align:right;
 }
 
-.subRow { 
+.subRow {
     padding:3px 0px 3px 0px;
     clear:both;
 }
@@ -249,7 +361,7 @@ div {
     text-align:left;
     font-size:12px;
     font-weight:bold;
-    color:#293c6b;		
+    color:#293c6b;
     margin:0px 0px 0px 0px;
 }
 
@@ -260,13 +372,13 @@ div {
     float:right;
 }
 
-.textArea 
+.textArea
 {
     font-family:verdana;
-    font-size:10px;		
+    font-size:10px;
     border: solid 1px #000;
     background-color:#C6DBFF;
-    background-color:#E7EFF7		
+    background-color:#E7EFF7
 }
 
 .textBox, select
@@ -275,6 +387,3 @@ div {
     background-color:#E7EFF7;
     padding: 6px 0px 6px 5px ;
 }
-
-
-

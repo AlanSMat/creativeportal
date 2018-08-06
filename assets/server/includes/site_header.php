@@ -1,7 +1,7 @@
-<?php 
+<?php
 /*
  * 2017-02-01 - Browser detection code added to prevent the user accessing the form when using Internet Explorer.
- * 
+ *
  *  */
 $page_title = "MediaSpectrum form to XML";
 include CLASSES_PATH . '/class.FormElements.php';
@@ -21,33 +21,30 @@ strpos($_SERVER['HTTP_USER_AGENT'],'Chrome') == '' ? $user_agent = 'IE' : $user_
 	<meta http-equiv="expires" content="0" />
 	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 	<meta http-equiv="pragma" content="no-cache" />
-	<link rel="stylesheet" type="text/css" href="<?php echo CSS_URL ?>/default.css"  media="screen" />    
-	<?php 
+	<?php
 	if(isset($_REQUEST["adnumber"])) {
 	?>
 		<script src="<?php echo FORMS_URL ?>/<?php echo $form_name ?>/json/<?php print $_REQUEST["adnumber"] ?>.js"></script>
-	<?php 
+	<?php
 	}
 	?>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-	
-	
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <script src="<?php echo SCRIPTS_URL ?>/jquery/src/core.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="<?php echo SCRIPTS_URL ?>/default.js"></script>
-  <script src="<?php echo SCRIPTS_URL ?>/hide_show.js"></script>
+  	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+	<script src="<?php echo SCRIPTS_URL ?>/jquery/src/core.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="<?php echo SCRIPTS_URL ?>/default.js"></script>
+	<script src="<?php echo SCRIPTS_URL ?>/hide_show.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo CSS_URL ?>/default.css"  media="screen" />
 </head>
 <body style="background-image:url(<?php echo IMAGES_URL ?>/cpbg.png); background-repeat:no-repeat; background-attachment:fixed; background-position: 50% 100%; background-size: cover;">
-    <?php 
+    <?php
     if(!isset($is_thank_you_page)) {
     ?>
     <div class="xmainBodyContainer">
     <!--<div class="mainBodyContainer">-->
-        <div class="mainPageWidthAndHeight" align="center" style="border:1px solid #000;">   
-            <div class="noprint">	  
-                <div><img src="<?php echo IMAGES_URL ?>/header.png" xwidth="1024" xheight="50" alt="" /></div>		                 
+        <div class="mainPageWidthAndHeight" align="center" style="border:1px solid #000;">
+            <div class="noprint">
+                <div><img src="<?php echo IMAGES_URL ?>/header.png" xwidth="1024" xheight="50" alt="" /></div>
                 <div class="line"><!--  --></div>
                 <div class="links_container">
                     <div style="float:left;"></div>
@@ -55,7 +52,7 @@ strpos($_SERVER['HTTP_USER_AGENT'],'Chrome') == '' ? $user_agent = 'IE' : $user_
                 </div>
 	    </div>
   	    <div class="contentContainer">
-    <?php 
+    <?php
     }
     if($user_agent != 'Chrome') {
         ?>
@@ -66,5 +63,3 @@ strpos($_SERVER['HTTP_USER_AGENT'],'Chrome') == '' ? $user_agent = 'IE' : $user_
         exit;
     }
     ?>
-	  
-	  
