@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AdWatchData>
+  <AdWatchInfo>
+    <Customer>
+      <Name1>Creative Campaign</Name1>
+      <Address>
+        <Addr1></Addr1>
+        <City></City>
+        <Postal-Code></Postal-Code>
+        <State>NSW</State>
+      </Address>
+      <Type>Customer</Type>
+      <IsCompany>1</IsCompany>
+      <account-number>T9999999</account-number>
+    </Customer>
+    <adwatch-order-number>A1014485</adwatch-order-number>
+    <order-source>CreativePortal</order-source>
+    <Ad>
+      <adwatch-ad-number>A1014485</adwatch-ad-number>
+      <external-ad-number></external-ad-number>
+      <ad-width>210</ad-width>
+      <phy-ad-width>210</phy-ad-width>
+      <ad-height>297</ad-height>
+      <named-ad-size></named-ad-size>
+      <color>Process</color>
+      <color-comments>color-comments</color-comments>
+      <production-comments>Selleys_Steven Mather</production-comments>
+      <ad-type>Creative Material</ad-type>
+      <AdLocInfo>
+        <sort-text>06/08/18</sort-text>
+        <publication>Creative Campaign</publication>
+        <publication-placement>Campaign</publication-placement>
+        <publication-position>MREC</publication-position>
+        <pressSection>Digital</pressSection>
+        <rundates>
+          <date>08282018</date>
+        </rundates>
+      </AdLocInfo>
+      <AdLocInfo>
+        <sort-text>06/08/18</sort-text>
+        <publication>Creative Campaign</publication>
+        <publication-placement>Campaign</publication-placement>
+        <publication-position>Roadblock</publication-position>
+        <pressSection>Digital</pressSection>
+        <rundates>
+          <date>08282018</date>
+        </rundates>
+      </AdLocInfo>
+      <production-method>CreativeNSW</production-method>
+      <pickup-number doNotUpdate="true"></pickup-number>
+    </Ad>
+    <ad-sold-by>CreativeCampaign</ad-sold-by>
+    <ad-entered-by>CreativeCampaign</ad-entered-by>
+    <order-status>Active</order-status>
+  </AdWatchInfo>
+</AdWatchData>
