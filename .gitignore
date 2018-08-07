@@ -1,0 +1,5 @@
+files_out/materials/*.*
+files_out/xml/*.xml
+files_out/adnumber/adnumber.txt
+files_out/html/*.html
+forms/default/json/*.js

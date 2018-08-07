@@ -21,7 +21,7 @@ include("globals.php");
                 <div><img src="<?php echo IMAGES_URL?>/nxtend/text_b.png" width="295" height="350" /></div>
                 <div><a href="<?php echo FORMS_URL?>/default/index.php"><img src="<?php echo IMAGES_URL?>/nxtend/advertising_b.png" width="295" height="185" /></a></div>
                 <div><a href="<?php echo FORMS_URL?>/default/index.php"><img src="<?php echo IMAGES_URL?>/nxtend/marketing_b.png" width="295" height="185" /></a></div>
-            </div>
+            </div>   
         </div>
     </body>
 </html>

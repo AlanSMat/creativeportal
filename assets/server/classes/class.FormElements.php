@@ -115,9 +115,9 @@ class FormElements {
         $element_settings['element_type']     = $this->config_json_array[$section][0]['element_type'];
         $element_settings['html_title']       = $this->config_json_array[$section][0]['html_title'];
         $element_settings['element_required'] = $this->config_json_array[$section][0]['required'];
-	$element_settings['css_class']        = $this->config_json_array[$section][0]['css_class'];
-	$element_settings['size']             = $this->config_json_array[$section][0]['size'];
-	$element_settings['xml_tag']          = $this->config_json_array[$section][0]['xml_tag'];
+	    $element_settings['css_class']        = $this->config_json_array[$section][0]['css_class'];
+	    $element_settings['size']             = $this->config_json_array[$section][0]['size'];
+	    $element_settings['xml_tag']          = $this->config_json_array[$section][0]['xml_tag'];
         $element_settings['format_settings']  = $this->config_json_array[$section][0]['format_settings'][0];
         $element_settings['element_id']       = $this->config_json_array[$section][0]['id'];
         
