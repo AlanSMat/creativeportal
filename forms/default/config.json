@@ -21,22 +21,22 @@
 	"first_name": [
 
 		{
-                    "section_name" : "Your_details",
+            "section_name" : "Your_details",
 		    "element_type" : "text" ,
 		    "element_name" : "first_name",
-                   "element_value" : "",
-		      "html_title" : "First Name",
-		        "required" : "1",
-		            "size" : "30",
-		       "css_class" : "textBox",
-		         "onclick" : "",
-		         "xml_tag" : "",
-                              "id" : "first_name",
-                 "format_settings" : [{
-                                     "inner_box_width"     : "50%",
-                                     "element_spacing_width" : "200px",
-                                     "elements_per_line"   : "2"
-                                 }]
+            "element_value" : "",
+		    "html_title" : "First Name",
+		    "required" : "1",
+		    "size" : "30",
+		    "css_class" : "textBox",
+		    "onclick" : "",
+		    "xml_tag" : "",
+            "id" : "first_name",
+            "format_settings" : [{
+                                    "inner_box_width"     : "50%",
+                                    "element_spacing_width" : "200px",
+                                    "elements_per_line"   : "2"
+                                }]
 		}
 
 	],

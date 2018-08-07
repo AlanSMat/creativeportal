@@ -21,7 +21,6 @@ define("SERVER_ASSETS_PATH", DOC_ROOT   . "/assets/server");
 define("CLASSES_PATH",       SERVER_ASSETS_PATH . "/classes");
 define("LIBS_PATH",          SERVER_ASSETS_PATH . "/libs");
 define("HANDLERS_PATH",      DOC_ROOT."/assets/server/handlers");
-
 define("SCRIPTS_URL",        ROOT_URL . "/assets/client/scripts");
 define("IMAGES_URL",         ROOT_URL . "/assets/client/images");
 define("ADMIN_URL",          ROOT_URL . "/admin");
@@ -30,7 +29,7 @@ define("CSS_URL",            ROOT_URL . "/assets/client/css");
 define("XML_URL",            ROOT_URL . "/files_out/xml");
 define("SITE_URL",           ROOT_URL . "/site");
 
-//include(CLASSES_PATH . "/class.MediaSpectrumBookingsXml.php");
+include(CLASSES_PATH . "/class.JSONConfig.php");
 include(HANDLERS_PATH . "/utils.php");
 
 

@@ -5,7 +5,7 @@ class FormElements {
         
 	$this->form_name         = $form_name;
 	$this->forms_path        = FORMS_PATH . "/" . $form_name;
-        $this->config_json_array = $this->_parse_json_file();
+    $this->config_json_array = $this->_parse_json_file();
 		
     }
     
