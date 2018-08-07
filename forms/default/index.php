@@ -2,34 +2,8 @@
 require("../../globals.php");
 
 include(INCLUDES_PATH . "/site_header.php");
-
 ?>
-<style type="text/css">
-	.advertising_department{ width: 700px; margin: auto; }
-	.button { border:1px solid #000; font-size:14px; cursor:pointer; clear:both; padding: 5px 0px 5px 0px; width:180px; }
-	.button:hover { border:1px solid #000; font-size:14px; cursor:pointer; clear:both; background-color:#fff; padding: 5px 0px 5px 0px; width:180px; }
-	.digital_elements{ width: 700px; margin: auto; }
-	.element_spacing { padding:0px 0px 10px 0px; }
-	.first_lvl_section { width: 700px;margin: auto;}
-	.footer_text { clear: both; padding: 10px 0px 10px 0px }
-	form input[type=text] { padding: 5px 0px 4px 3px; }
-	form input[type=select] { padding: 5px 0px 4px 3px; }
-	.grey_bg { xbackground-color: #f0f0f0; }
-	hr { border-color: #0082DA ; }
-	.hr_spacing { padding: 0px 0px 10px 0px; }
-	.html_title { padding:10px 0px 4px 0px; xborder: 1px solid #000 }
-	.inner_container { border:0px solid #000; width:700px; margin: auto; background:rgba(255,255,255,0.5);}
-	.inner_box { padding:3px 0px 10px 0px; display: inline-block; border: 0px solid #000; position: relative; margin: 1%; width:49%;  float:left; margin:0; background:#7f7f7f; background:rgba(255,255,255,0.5); }
-	.marketing_department{ width:700px; margin:auto; }
-	.outer_container { border:0px solid #000; width:700px; margin: auto}
-	.print_elements { width: 700px; margin: auto; }
-	.second_lvl_section {}
-	.section_title { padding: 10px 0px 0px 0px; font-size: 16px }
-	.sub_title { padding: 10px 0px 0px 0px; font-size: 18px; }
-	/* sub title spacing */
-	.sub_title_container { clear: both; padding: 10px 0px 0px 0px }
-	.third_lvl_section {}
-</style>
+
 <!--<a href="<?php echo FORMS_URL  ?>/digital/index.php">JSON Files</a>-->
 <form id="<?php echo $form_name ?>" name="<?php echo $form_name ?>" action="<?php echo ROOT_URL ?>/forms/process.php" method="post" enctype="multipart/form-data">
 	<input type="hidden" name="form_name" id="form_name" value="<?php echo $form_name ?>" />

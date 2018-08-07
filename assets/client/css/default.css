@@ -1,10 +1,19 @@
+
+
 form {
     margin: 0px; 
     padding: 0px;
 }
 
-a 
-{
+form input[type=text] { 
+    padding: 5px 0px 4px 3px; 
+}
+
+form input[type=select] { 
+    padding: 5px 0px 4px 3px; 
+}
+
+a {
     text-decoration: none;
     color:#00207B;	
 }
@@ -43,6 +52,11 @@ div {
 }
 
 /*** classes ***/
+.advertising_department{ 
+    width: 700px; 
+    margin: auto; 
+}
+
 .altBgRowColor {
     background-color:#E7EFF7;
     height:18px;
@@ -71,10 +85,38 @@ div {
     text-align:left;
 }
 
+.button { 
+    border:1px solid #000; 
+    font-size:14px; 
+    cursor:pointer; 
+    clear:both; 
+    padding: 5px 0px 5px 0px; 
+    width:180px; 
+}
+
+.button:hover { 
+    border:1px solid #000; 
+    font-size:14px; 
+    cursor:pointer; 
+    clear:both; 
+    background-color:#fff; 
+    padding: 5px 0px 5px 0px; 
+    width:180px; 
+}
+
 .contentContainer {    
     text-align: left; 
     width: 100%;
     border: 0px solid #000;
+}
+
+.digital_elements{ 
+    width: 700px; 
+    margin: auto; 
+}
+
+.element_spacing { 
+    padding:0px 0px 10px 0px; 
 }
 
 .footer {
@@ -85,12 +127,54 @@ div {
     text-align:right;
 }
 
+.first_lvl_section { 
+    width: 700px;
+    margin: auto;
+}
+
+.footer_text { 
+    clear: both; 
+    padding: 10px 0px 10px 0px 
+}
+
 .form_title { 
     border: 0px solid #000; 
     padding: 10px 0px 10px 10px;
     text-align: left;
     font-weight: bold;
     font-size: 16px;
+}
+
+hr { 
+    border-color: #0082DA; 
+}
+
+.hr_spacing { 
+    padding: 0px 0px 10px 0px; 
+}
+
+.html_title { 
+    padding:10px 0px 4px 0px;     
+}
+
+.inner_container { 
+    border:0px solid #000; 
+    width:700px; 
+    margin: auto; 
+    background:rgba(255,255,255,0.5);
+}
+
+.inner_box { 
+    padding:3px 0px 10px 0px; 
+    display: inline-block; 
+    xborder: 0px solid #000; 
+    position: relative; 
+    margin: 1%; 
+    width:49%;  
+    float:left; 
+    margin:0; 
+    background:#7f7f7f; 
+    background:rgba(255,255,255,0.5); 
 }
 
 .leftCol {
@@ -142,6 +226,17 @@ div {
     text-align:left;  
 }   
 
+.marketing_department{ 
+    width:700px; 
+    margin:auto; 
+}
+
+.outer_container { 
+    border:0px solid #000; 
+    width:700px; 
+    margin: auto
+}
+
 .pageBackLink 
 {
     font-weight:normal;
@@ -189,6 +284,11 @@ div {
     float:left;
 }
 
+.print_elements { 
+    width: 700px; 
+    margin: auto; 
+}
+
 .print {
     padding:0px 0px 0px 35px;
 }
@@ -222,6 +322,22 @@ div {
 .rowSpacer 
 {
     padding:3px, 0px 3px 0px;
+}
+
+.section_title { 
+    padding: 10px 0px 0px 0px; 
+    font-size: 16px 
+}
+
+.sub_title { 
+    padding: 10px 0px 0px 0px; 
+    font-size: 18px; 
+}
+
+/* sub title spacing */
+.sub_title_container { 
+    clear: both; 
+    padding: 10px 0px 0px 0px 
 }
 
 .subheader {
