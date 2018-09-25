@@ -2,8 +2,9 @@
 date_default_timezone_set("Australia/Sydney");
 define("SITE_DIR", "creativeportal");
 
-define("DOC_ROOT",$_SERVER['DOCUMENT_ROOT'] . '/' . SITE_DIR . "");
-define("ROOT_URL","http://" . $_SERVER["SERVER_NAME"] . "/" . SITE_DIR . "");
+define("DOC_ROOT", __DIR__);
+$_SERVER["SERVER_NAME"] !== "localhost" ? $active_dir = "/news/" : $active_dir = "/" ;
+define("ROOT_URL","http://" . $_SERVER["SERVER_NAME"] . $active_dir . SITE_DIR . "");
 
 define("NXTEND_TITLE",       "News Xtend");
 define("MAIN_TITLE",         "Creative Portal");
@@ -29,8 +30,5 @@ define("CSS_URL",            ROOT_URL . "/assets/client/css");
 define("XML_URL",            ROOT_URL . "/files_out/xml");
 define("SITE_URL",           ROOT_URL . "/site");
 
-include(CLASSES_PATH . "/class.JSONConfig.php");
 include(HANDLERS_PATH . "/utils.php");
-
-
 ?>
